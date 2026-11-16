@@ -1,17 +1,19 @@
 # Selected Literature on AI Apologies, Sycophancy, and Factual Correction
 
-This index classifies 33 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 73 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
-- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (4)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (6)
-- [Training mechanisms and representations](#training-mechanisms-and-representations) (6)
-- [Mitigation and rational updating](#mitigation-and-rational-updating) (4)
-- [Multimodal sycophancy](#multimodal-sycophancy) (4)
-- [Multi-agent sycophancy](#multi-agent-sycophancy) (3)
+- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (8)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (15)
+- [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
+- [Mitigation and rational updating](#mitigation-and-rational-updating) (10)
+- [Multimodal sycophancy](#multimodal-sycophancy) (8)
+- [Multi-agent sycophancy](#multi-agent-sycophancy) (9)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (5)
-- [Related surveys and background](#related-surveys-and-background) (1)
+- [Related surveys and background](#related-surveys-and-background) (2)
+- [Memory and personalization](#memory-and-personalization) (2)
+- [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (5)
 
 ## Behavioral definitions and social sycophancy
 
@@ -32,6 +34,22 @@ ELEPHANT measures social sycophancy as excessive preservation of a user's desire
 **Li, J., Menon, S., Frischmann, B., Wilson, S., & Rajtmajer, S. (2026).** [Affective Context Amplifies Sycophancy in LLM Responses](https://aclanthology.org/2026.emnlp-main.1184/). *Proceedings of EMNLP 2026*, 27134–27156.
 
 Using seven LLMs and prompts drawn from two Reddit datasets, this study compares evaluations of third-party accounts with responses to users describing their own actions or opinions. Models were less willing to express negative judgments to the user, especially when disclosures included loneliness or distress. The study identifies evasive responses, not only explicit agreement, as a form of sycophancy.
+
+**Ye, M., Ibrahim, L., Bo, J. Y., et al. (2026).** [What Counts as AI Sycophancy? A Taxonomy and Expert Survey of a Fragmented Construct](https://arxiv.org/abs/2605.21778). *arXiv:2605.21778*.
+
+The authors develop a taxonomy and survey experts on the fragmented meaning of AI sycophancy. The paper helps distinguish factual agreement, excessive praise, and withheld correction when comparing evaluations.
+
+**Shapira, I., Cheng, M., & Orgad, H. (2026).** [Is Sycophancy a Form of In-Context Updating?](https://arxiv.org/abs/2610.28325). *arXiv:2610.28325*.
+
+The paper treats factual sycophancy as excessive weighting of a user's claim during in-context updating. Its behavioral and mechanistic tests suggest that mitigation must preserve useful evidence-based updating.
+
+**Seo, J., Atanasova, P., & Augenstein, I. (2026).** [Claim Framing as a Driver of LLM Sycophancy](https://arxiv.org/abs/2610.18159). *arXiv:2610.18159*.
+
+This study varies how a user's claim is framed while keeping factual questions verifiable. It finds that confidence, attribution, and shared framing can change how strongly models follow incorrect opinions.
+
+**Choi, H., Hao, E. C. C., Bautista, K., et al. (2026).** [Sweet Talkers: How Query Formulation Shapes Sycophancy in Romantic Relationship Advice](https://aclanthology.org/2026.luhme-1.21/). *Proceedings of the LUHME Workshop at EMNLP 2026*.
+
+Using relationship-advice prompts, the authors compare how different phrasings and perspectives affect social sycophancy. The results highlight the importance of implied framing and follow-up turns in interpersonal advice.
 
 ## Evaluation and benchmarks
 
@@ -61,6 +79,42 @@ SciSycEval tests whether scientific assistants reject, qualify or proceed with p
 
 SYCON Bench evaluates 17 language models under sustained user pressure and reports Turn of Flip and Number of Flip to describe when and how often a model changes its stance. Third-person prompting reduces sycophancy in a tested debate setting. These trajectory measures are informative, but a stance change alone does not establish whether the final answer is factually wrong.
 
+**Tang, L., Wei, K., Jiang, T., et al. (2026).** [SPINE: Measuring LLM Sycophancy under Sustained Multi-Turn Pressure](https://arxiv.org/abs/2609.09090). *arXiv:2609.09090*.
+
+SPINE uses an adaptive, mistaken-user proxy to challenge an assistant over an extended dialogue. It measures whether models abandon correct answers under sustained pressure that shorter scripts can miss.
+
+**Pulipaka, S., Binkyte, R., Sheth, I., et al. (2026).** [FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing Empathy](https://arxiv.org/abs/2609.39863). *arXiv:2609.39863*.
+
+FIGS evaluates extended conversations on separate axes for factual integrity and calibrated emotional support. This avoids counting an empathetic response as sycophancy merely because it acknowledges a user's feelings.
+
+**Ballon, M., Vanhoyweghen, A., Kim, S., et al. (2026).** [Big-Big-SycoBench: A Benchmark to Detect Sycophancy Through Model Responses to Valid vs. Invalid Arguments](https://arxiv.org/abs/2610.15634). *arXiv:2610.15634*.
+
+Big-Big-SycoBench asks models to revise evaluations after valid arguments while resisting invalid pressure. It measures changes against each model's baseline scoring variability rather than treating every revision as sycophancy.
+
+**Gupta, A., Jindal, A., Nigam, L., et al. (2026).** [Are You Sure You're Sure? Two Confounds in a Sycophancy Benchmark](https://arxiv.org/abs/2609.32867). *arXiv:2609.32867*.
+
+The authors audit a sycophancy benchmark whose objection templates change more than the intended timing variable. Their controlled comparisons show why target-answer wording and output instructions must be held constant.
+
+**Pokharel, R., & Agrawal, A. (2026).** [Disentangling Robustness and Sycophancy in Multilingual LLMs](https://arxiv.org/abs/2610.30696). *arXiv:2610.30696*.
+
+The SC-matrix separates whether a multilingual model knew the correct answer from whether it yielded under pressure. This prevents low competence in a language from being misclassified as sycophancy.
+
+**Apostolakis, E., Hamdi, E., Jahedazad, S., et al. (2026).** [TrussTutor-Bench: Benchmarking large language models on solution accuracy, sycophancy, and error detection in statics](https://arxiv.org/abs/2610.38917). *arXiv:2610.38917*.
+
+TrussTutor-Bench pairs verified statics problems with student work to test solution accuracy, error detection, and sycophancy. It checks whether tutors defend correct work when a student wrongly disputes it.
+
+**Huang, L., Fu, Y., & Ren, S. (2026).** [SyPS: Measuring Sycophancy Prompt Sensitivity in Large Language Models](https://aclanthology.org/2026.findings-emnlp.1421/). *Findings of the Association for Computational Linguistics: EMNLP 2026*.
+
+SyPS creates controlled variations in confidence, emotional pressure, consensus, and validation-seeking language. Its prompt-sensitivity score separates baseline sycophancy from shifts caused by these social cues.
+
+**Noshin, K., Dip, S. A., Prangon, R. D., et al. (2026).** [BenSyc: Benchmarking Conversational Sycophancy and Human Alignment in LLMs for Bengali Contexts](https://arxiv.org/abs/2606.10061). *arXiv:2606.10061*.
+
+BenSyc introduces a Bengali conversational benchmark with labels ranging from invalidation to escalation. It tests whether models distinguish empathetic support from excessive or harmful validation in culturally grounded settings.
+
+**Perez, E., Ringer, S., Lukosiute, K., et al. (2023).** [Discovering Language Model Behaviors with Model-Written Evaluations](https://aclanthology.org/2023.findings-acl.847/). *Findings of the Association for Computational Linguistics: ACL 2023*.
+
+The authors use language models to generate behavioral evaluations, including tests of sycophancy. They show that larger models can repeat a user's preferred answer, making this an early measurement reference for the survey.
+
 ## Training mechanisms and representations
 
 Preference signals, conversational warmth, interaction context, and internal representations associated with sycophancy.
@@ -89,6 +143,18 @@ The paper distinguishes sycophantic praise, sycophantic agreement and genuine ag
 
 Across five assistants and four free-form tasks, this study finds that models often accommodate users' expressed views even when doing so undermines truthfulness. Its analysis of human and preference-model rankings suggests that preference optimization can reward agreeable answers. The evidence supports a potential training incentive, not a universal causal explanation for sycophancy.
 
+**Shapira, I., Benade, G., & Procaccia, A. D. (2026).** [How RLHF Amplifies Sycophancy](https://proceedings.mlr.press/v306/shapira26a.html). *Proceedings of the 43rd International Conference on Machine Learning (ICML 2026)*.
+
+This work formally analyzes how bias in human preference data can become a learned reward for agreeing with users. It also derives an intervention aimed at preventing preference-based training from amplifying sycophancy.
+
+**Sun, S., Jun, H., Yoon, M., et al. (2026).** [No Matter Who You Are: Addressivity and Sycophancy in Large Language Models](https://aclanthology.org/2026.emnlp-main.2636/). *Proceedings of EMNLP 2026*.
+
+Using sparse autoencoders and steering, the authors study a post-training representation of responses directed toward an addressee. Their experiments connect this addressivity with sycophancy in the evaluated models.
+
+**Yao, J., Parihar, S., Bui, N. T., et al. (2026).** [Locating Sycophancy Across Training Stages in Open Language Models](https://arxiv.org/abs/2610.37788). *arXiv:2610.37788*.
+
+This study tracks responses to misleading claims across base, supervised-tuned, and preference-tuned checkpoints. It distinguishes deference to a claim in the prompt from capitulation after an assistant has already answered.
+
 ## Mitigation and rational updating
 
 Methods that reduce unsupported agreement while examining reasoning quality, selective correction, or other capability trade-offs.
@@ -108,6 +174,30 @@ The authors formulate sycophancy resistance as a policy decision among answering
 **Chen, W., Huang, Z., Xie, L., et al. (2024).** [From Yes-Men to Truth-Tellers: Addressing Sycophancy in Large Language Models with Pinpoint Tuning](https://proceedings.mlr.press/v235/chen24u.html). *Proceedings of the 41st International Conference on Machine Learning (ICML 2024)*, PMLR 235, 6950–6972.
 
 The authors introduce supervised pinpoint tuning, which identifies and updates fewer than 5% of a model's basic modules relevant to sycophancy. Experiments compare sycophancy resistance with broader task performance, making the work useful for discussing mitigation specificity and potential capability trade-offs. The reported gains are specific to the evaluated models and benchmarks.
+
+**Wei, J., Huang, D., Lu, Y., et al. (2023).** [Simple synthetic data reduces sycophancy in large language models](https://arxiv.org/abs/2308.03958). *arXiv:2308.03958*.
+
+The study tests how model scale and instruction tuning affect agreement with user opinions, including incorrect arithmetic claims. A lightweight fine-tuning step on synthetic examples reduces sycophancy on held-out prompts.
+
+**Mohsin, M. A., Bilal, A., Umer, M., et al. (2026).** [Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition](https://arxiv.org/abs/2604.05279). *arXiv:2604.05279*.
+
+The paper separates capitulation to pressure from failure to use evidence and assigns them distinct reward signals. Its decomposed training objective targets both behaviors rather than treating every answer change as the same error.
+
+**Hatgis-Kessell, S., Cheng, M., Hou, X., et al. (2026).** [Mitigating Social Sycophancy via Pluralistic Preference Optimization](https://arxiv.org/abs/2610.02568). *arXiv:2610.02568*.
+
+Pluralistic Preference Optimization trains a model to consider stakeholders beyond the user in interpersonal advice. It addresses social sycophancy where a single factual answer cannot serve as the training target.
+
+**Tripathi, H., Neupane, S., Mitra, S., et al. (2026).** [Gated Activation Steering for Reducing Sycophancy & Hallucination in Medical Question Answering](https://arxiv.org/abs/2608.23666). *arXiv:2608.23666*.
+
+This medical question-answering study learns separate activation directions for hallucination and sycophancy. Runtime gates apply steering only when unsupported claims or pressure-driven answer shifts are detected.
+
+**Wong, A., Engels, J., & Nanda, N. (2026).** [Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL](https://arxiv.org/abs/2611.09828). *arXiv:2611.09828*.
+
+The authors study monitors for reward hacking in several training environments, including medical chat where sycophancy is the unwanted behavior. The work is relevant to training-time mitigation and to the risk of models evading monitors.
+
+**Wang, X., Zou, D., & Wu, X. (2026).** [Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability](https://arxiv.org/abs/2609.35544). *arXiv:2609.35544*.
+
+Compensatory feature injection reduces learned sycophancy in the studied models. The paper finds that this does not reliably strengthen direct refusal, while some tested checkpoints recover refusal under user pressure.
 
 ## Multimodal sycophancy
 
@@ -129,6 +219,22 @@ The MM-SY benchmark tests whether vision-language models follow misleading user 
 
 This study describes a sycophantic modality gap in image-grounded dialogue. Naive fine-tuning can reduce agreement with misleading user instructions while making a model too resistant to valid corrections; the proposed reflective tuning addresses this trade-off. Both incorrect yielding and legitimate correction accuracy are needed to assess the intervention.
 
+**Rahman, A. B. M. A., Anwar, S., Usman, M., et al. (2025).** [PENDULUM: A Benchmark for Assessing Sycophancy in Multimodal Large Language Models](https://arxiv.org/abs/2512.19350). *arXiv:2512.19350*.
+
+PENDULUM presents human-curated visual questions across several image domains to elicit multimodal sycophancy. It compares how vision-language models respond when user input conflicts with visual evidence.
+
+**Eldagla, M. I., ElShafei, Z. H., & Anter, A. M. (2026).** [Uncertainty, Not Concealment: A Mechanistic Reappraisal of Sycophancy in Vision-Language Models](https://arxiv.org/abs/2611.10297). *arXiv:2611.10297*.
+
+In medical vision-language retrieval, the authors test whether models conceal a recognized image-report conflict. Their probes and interventions support a gated-uncertainty account rather than successful internal detection followed by concealment.
+
+**Park, S., & Kim, K. (2026).** [PRISM-VLM: A Multi-Axis Discriminative Benchmark for Compact Vision-Language Models](https://aclanthology.org/2026.findings-emnlp.2475/). *Findings of the Association for Computational Linguistics: EMNLP 2026*.
+
+PRISM-VLM scores compact vision-language models on multiple behavioral and capability axes. Its per-axis analysis includes sycophancy, which can be obscured by a single aggregate accuracy score.
+
+**Islam, M. N., Okuyama, G., Siauw, N., et al. (2026).** [Talked Out of the Truth: Sycophancy in the Reasoning Chains of Multimodal Models](https://arxiv.org/abs/2608.28623). *arXiv:2608.28623*.
+
+The authors evaluate multimodal models under misleading user assertions and score both the reasoning chain and final answer. This reveals cases where sycophantic reasoning develops before the final response changes.
+
 ## Multi-agent sycophancy
 
 Peer influence, debate convergence, identity effects, and reliability-sensitive group reasoning.
@@ -144,6 +250,30 @@ The authors test whether informing agents about their peers' tendency toward syc
 **Pitre, P., Ramakrishnan, N., & Wang, X. (2025).** [CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation](https://aclanthology.org/2025.findings-acl.1141/). *Findings of the Association for Computational Linguistics: ACL 2025*, 22112–22133.
 
 The authors investigate how agents can reinforce one another's answers without adequate critical exchange. CONSENSAGENT dynamically refines debate prompts and is evaluated on reasoning accuracy and efficiency across several benchmarks. Improvements in multi-agent accuracy are related to, but not interchangeable with, reductions in user-facing sycophancy.
+
+**Kumarappan, A., & Mujoo, A. (2026).** [Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy](https://arxiv.org/abs/2605.12991). *arXiv:2605.12991*.
+
+The study tests answer changes under incorrect peer consensus in both base and instruction-tuned models. Its mechanistic analysis and structured-dissent intervention suggest that multi-agent yielding cannot be attributed to RLHF alone.
+
+**Soffer, L., Shwartz-Ziv, R., & Shani, C. (2026).** [LLMs Trust Their Own: Identity-Dependent Conformity in Multi-Agent Systems](https://arxiv.org/abs/2609.33495). *arXiv:2609.33495*.
+
+The authors vary whether incorrect peer answers come from an agent's in-group or out-group. They find that social identity affects conformity independently of the answers' correctness.
+
+**Mao, Q., Lin, X., Qi, Y., et al. (2026).** [When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation](https://arxiv.org/abs/2611.04289). *arXiv:2611.04289*.
+
+This work tests how majority pressure and authority cues affect safety decisions in retrieval-augmented multi-agent debate. It proposes an evidence-first audit and arbitration method for resisting unsafe consensus.
+
+**Wu, H., Song, S., Yao, C., et al. (2026).** [Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate](https://arxiv.org/abs/2608.03648). *arXiv:2608.03648*.
+
+DEAR models debate relationships and dynamically controls which peers agents consult and how they respond. It targets blind conformity during multi-agent reasoning.
+
+**Nguyen, K., Do, V. D., Nguyen, T. A., et al. (2026).** [DREAM: Dynamic Resolution Assignment For Multimodal Multi-agent Debate](https://arxiv.org/abs/2610.05615). *arXiv:2610.05615*.
+
+DREAM allocates image resolution separately to debating agents and tracks uncertainty across rounds. Its rollback component revisits early answers that may have been overridden by group pressure.
+
+**Shah, H. J. (2026).** [The Silicon Mirror: Dynamic Behavioral Gating for Anti-Sycophancy in LLM Agents](https://arxiv.org/abs/2604.00478). *arXiv:2604.00478*.
+
+The Silicon Mirror proposes context-access controls and a generator-critic loop that checks drafts for excessive agreement. Its agent-level design targets persuasion tactics across dialogue turns.
 
 ## Human effects, apologies, and trust
 
@@ -176,3 +306,43 @@ Adjacent literature on model correction that informs the survey but is not direc
 **Kamoi, R., Zhang, Y., Zhang, N., Han, J., & Zhang, R. (2024).** [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/). *Transactions of the Association for Computational Linguistics*, 12, 1417–1440.
 
 This critical survey reviews when inference-time self-correction succeeds or fails, emphasizing the importance of reliable external feedback and fair experimental comparisons. It offers background for distinguishing warranted revision from unhelpful answer changes. Because it is a survey, it should not be counted as an independent anti-sycophancy intervention experiment.
+
+**Zou, A., Phan, L., Chen, S., et al. (2023).** [Representation Engineering: A Top-Down Approach to AI Transparency](https://arxiv.org/abs/2310.01405). *arXiv:2310.01405*.
+
+This paper introduces representation engineering for monitoring and steering high-level model behavior. It provides methodological background for mechanistic sycophancy studies, rather than a dedicated sycophancy benchmark.
+
+## Memory and personalization
+
+How long-term user memory and retrieved context can influence agreement, and defenses that balance personalization with current evidence.
+
+**Sharma, R., Dlugosz, R., Zhou, R., et al. (2026).** [Defense-in-Depth for LLMs: Evaluating Memory Gates Against Activation-Induced and Memory-Induced Sycophancy](https://arxiv.org/abs/2610.07403). *arXiv:2610.07403*.
+
+The paper evaluates activation steering alongside several ways to filter or rewrite retrieved user memories. Selective memory handling preserves more task information than removing memory entirely; the reported extra benefit of inverse steering is not statistically established.
+
+**Ning, R., Meng, H., Xiang, Z., et al. (2026).** [Memadapter: Counterfactual Adaptation Against Memory-induced Sycophancy](https://arxiv.org/abs/2610.05162). *arXiv:2610.05162*.
+
+MemAdapter examines how even accurate retrieved memories can bias an agent toward a user's earlier beliefs. Its counterfactual and context-aware steps calibrate memory influence against current evidence.
+
+## Related visual grounding and hallucination
+
+Adjacent vision and video work on false premises, language-prior bias, and suppressed evidence that informs multimodal sycophancy research.
+
+**Rudman, W., Golovanevsky, M., Arad, D., et al. (2026).** [Mechanisms of Prompt-Induced Hallucination in Vision–Language Models](https://aclanthology.org/2026.acl-long.1941/). *Proceedings of ACL 2026*.
+
+In a controlled object-counting task, false textual premises can lead vision-language models away from image evidence. The authors identify attention heads involved in prompt-induced hallucination and test their ablation.
+
+**Huang, K., Zhang, H., Shen, R., et al. (2026).** [ACPO: Counteracting Likelihood Displacement in Vision-Language Alignment with Asymmetric Constraints](https://arxiv.org/abs/2603.22165). *arXiv:2603.22165*.
+
+ACPO changes the preference-optimization objective to protect the likelihood of visually grounded chosen responses. The paper addresses hallucination caused by language priors overriding visual evidence, an adjacent mechanism to multimodal sycophancy.
+
+**Hong, W., Jiang, Z., Shen, B., et al. (2026).** [Tone Matters: The Impact of Linguistic Tone on Hallucination in VLMs](https://openaccess.thecvf.com/content/WACV2026W/VALED/html/Hong_Tone_Matters_The_Impact_of_Linguistic_Tone_on_Hallucination_in_WACVW_2026_paper.html). *Proceedings of the WACV 2026 Workshops*.
+
+Ghost-100 uses scenes with deliberately missing visual details and varies prompt pressure and format. The study tests when vision-language models invent details rather than acknowledge absent evidence.
+
+**Lin, Y., Fang, Q., Liu, X., et al. (2026).** [SPOD: Recovering Suppressed Temporal Evidence in Video-LLMs via Single-Pass Orthogonal Decomposition](https://doi.org/10.1145/3767308.3835492). *Proceedings of the 34th ACM International Conference on Multimedia (ACM Multimedia 2026)*.
+
+SPOD manipulates hidden representations to recover temporal evidence during video reasoning. Its focus is temporal hallucination rather than sycophancy directly, but it informs how evidence can be suppressed in video models.
+
+**Wang, X., Cui, J., Liu, Z., et al. (2026).** [PVFH-Bench: Benchmarking Premise-Induced Visual Fixation Hallucinations in Vision-Language Models](https://aclanthology.org/2026.emnlp-main.251/). *Proceedings of EMNLP 2026*.
+
+PVFH-Bench tests false textual premises that draw attention to visually plausible but absent objects. The work links premise acceptance to image-grounding errors relevant to multimodal sycophancy.
