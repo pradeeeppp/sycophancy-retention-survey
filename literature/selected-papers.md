@@ -1,4 +1,8 @@
-# Selected Literature on AI Apologies, Sycophancy, and Factual Correction
+# Study Notes on AI Apologies, Sycophancy, and Factual Correction
+
+[← Back to the reading list](../README.md)
+
+The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries.
 
 This index classifies 73 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
