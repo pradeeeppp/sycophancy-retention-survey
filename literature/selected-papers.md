@@ -4,14 +4,14 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries.
 
-This index classifies 73 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 81 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
-- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (8)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (15)
-- [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
-- [Mitigation and rational updating](#mitigation-and-rational-updating) (10)
+- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (9)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (20)
+- [Training mechanisms and representations](#training-mechanisms-and-representations) (10)
+- [Mitigation and rational updating](#mitigation-and-rational-updating) (11)
 - [Multimodal sycophancy](#multimodal-sycophancy) (8)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (9)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (5)
@@ -54,6 +54,12 @@ This study varies how a user's claim is framed while keeping factual questions v
 **Choi, H., Hao, E. C. C., Bautista, K., et al. (2026).** [Sweet Talkers: How Query Formulation Shapes Sycophancy in Romantic Relationship Advice](https://aclanthology.org/2026.luhme-1.21/). *Proceedings of the LUHME Workshop at EMNLP 2026*.
 
 Using relationship-advice prompts, the authors compare how different phrasings and perspectives affect social sycophancy. The results highlight the importance of implied framing and follow-up turns in interpersonal advice.
+
+
+**Singh, J., & Kaynig-Fittkau, V. (2026).** [Decomposing LLM Advice Sycophancy: Content, Style, and Framing Drive Distinct Response Dimensions](https://aclanthology.org/2026.aacl-long.12/). *Proceedings of AACL-IJCNLP 2026 (Long Papers), 255–274.*
+
+Across 787 advice-seeking scenarios, the study independently varies semantic content, linguistic style, and narrative framing. Emotional warmth tracks content, stance endorsement tracks framing, and recommendation directness tracks style. The paper is directly relevant to distinguishing social validation from factual agreement and to avoiding interventions that mistakenly suppress empathy.
+
 
 ## Evaluation and benchmarks
 
@@ -119,6 +125,32 @@ BenSyc introduces a Bengali conversational benchmark with labels ranging from in
 
 The authors use language models to generate behavioral evaluations, including tests of sycophancy. They show that larger models can repeat a user's preferred answer, making this an early measurement reference for the survey.
 
+
+**Laban, P., Murakhovs'ka, L., Xiong, C., & Wu, C.-S. (2023).** [Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment](https://arxiv.org/abs/2311.08596). *arXiv:2311.08596.*
+
+The FlipFlop design challenges a model's first answer with a phrase such as 'Are you sure?' and measures whether it maintains or changes its classification. The paper reports frequent changes and deterioration in final accuracy. It directly informs the pressure-only arm of the outcome grid, while not by itself testing acceptance of a valid correction.
+
+
+**Krishna, S., Agarwal, C., & Lakkaraju, H. (2024).** [Understanding the Effects of Iterative Prompting on Truthfulness](https://proceedings.mlr.press/v235/krishna24a.html). *Proceedings of ICML 2024, PMLR 235, 25583–25602.*
+
+Experiments compare iterative prompting variants for model accuracy and calibration. Naive iterative prompts can worsen truthfulness and calibration, while alternative protocols improve performance. This is direct evidence for vulnerability to repeated interaction, but should not be assumed to isolate social pressure from all other prompt changes.
+
+
+**Kim, S. W., & Khashabi, D. (2025).** [Challenging the Evaluator: LLM Sycophancy Under User Rebuttal](https://aclanthology.org/2025.findings-emnlp.1222/). *Findings of EMNLP 2025, 22461–22478.*
+
+Models were more likely to endorse counterarguments presented as follow-up user rebuttals than when evaluating alternatives together. Detailed but incorrect reasoning and casually framed feedback also changed susceptibility. This supplies a controlled study of conversational framing for the manuscript's C1 evidence-versus-pressure distinction.
+
+
+**Fanous, A., Goldberg, J., Agarwal, A. A., Lin, J., Zhou, A., Daneshjou, R., & Koyejo, S. (2025).** [SycEval: Evaluating LLM Sycophancy](https://ojs.aaai.org/index.php/AIES/article/view/36598). *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES 2025); see also arXiv:2502.08177.*
+
+SycEval evaluates three assistants on mathematics and medical questions, comparing types and placements of rebuttals. Its progressive/regressive labels separate moves toward and away from the correct answer; do not equate every move toward a correct answer with evidence-sensitive updating, since a switch might arise from pressure alone.
+
+
+**Sicilia, A., Inan, M., & Alikhani, M. (2025).** [Accounting for Sycophancy in Language Model Uncertainty Estimation](https://aclanthology.org/2025.findings-naacl.438/). *Findings of NAACL 2025, 7866–7881.*
+
+This work studies uncertainty shifts induced by user suggestions, varying their correctness and confidence, and proposes SyRoUP to account for sycophancy in uncertainty estimation. It broadens the survey's measures beyond binary flipping and supports separating confidence as a social cue from the actual reliability of evidence.
+
+
 ## Training mechanisms and representations
 
 Preference signals, conversational warmth, interaction context, and internal representations associated with sycophancy.
@@ -158,6 +190,12 @@ Using sparse autoencoders and steering, the authors study a post-training repres
 **Yao, J., Parihar, S., Bui, N. T., et al. (2026).** [Locating Sycophancy Across Training Stages in Open Language Models](https://arxiv.org/abs/2610.37788). *arXiv:2610.37788*.
 
 This study tracks responses to misleading claims across base, supervised-tuned, and preference-tuned checkpoints. It distinguishes deference to a claim in the prompt from capitulation after an assistant has already answered.
+
+
+**Duszenko, J. (2026).** [Sycophantic Anchors: Localizing and Quantifying User Agreement in Reasoning Models](https://arxiv.org/abs/2601.21183). *ACL 2026 Student Research Workshop; arXiv:2601.21183.*
+
+Counterfactual continuations identify individual reasoning sentences that causally contribute to subsequent agreement with a wrong user claim. Activation-based probes and regressors estimate the presence and strength of these anchors. The results are relevant to mechanism localization and to evaluating reasoning-process faithfulness, not direct evidence of apology faithfulness.
+
 
 ## Mitigation and rational updating
 
@@ -202,6 +240,12 @@ The authors study monitors for reward hacking in several training environments, 
 **Wang, X., Zou, D., & Wu, X. (2026).** [Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability](https://arxiv.org/abs/2609.35544). *arXiv:2609.35544*.
 
 Compensatory feature injection reduces learned sycophancy in the studied models. The paper finds that this does not reliably strengthen direct refusal, while some tested checkpoints recover refusal under user pressure.
+
+
+**Stengel-Eskin, E., Hase, P., & Bansal, M. (2025).** [Teaching Models to Balance Resisting and Accepting Persuasion](https://aclanthology.org/2025.naacl-long.412/). *Proceedings of NAACL 2025 (Long Papers), 8108–8122.*
+
+Persuasion-Balanced Training (PBT) uses dialogue trees and preference optimization to improve both resistance to adversarial persuasion and acceptance of helpful persuasion. The authors also report more stable multi-agent debate results. This is a central comparator for the survey's resistance–receptiveness trade-off.
+
 
 ## Multimodal sycophancy
 
