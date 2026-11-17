@@ -39,7 +39,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **83 studies across ten topics**. Eight additions selected on 2026-11-17 are documented here; their manuscript inclusion should be reconciled against the screening protocol before claiming a PRISMA count. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **83 studies across ten topics**. Recent additions target identified gaps in error retraction, correction selectivity, and apology theory. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 The current coverage centers on sycophancy, factual correction, apologies, trust, and personalization. User retention is a motivating question: studies of trust, reliance, or dependence should not automatically be read as direct measurements of long-term retention.
 
