@@ -65,10 +65,9 @@ Definitions, interpersonal affirmation, epistemic authority, and the pragmatics 
 - [Claim Framing as a Driver of LLM Sycophancy](https://arxiv.org/abs/2610.18159) *(2026)* — Tests how confidence, attribution, and shared framing change responses to incorrect user opinions.
 - [Sweet Talkers: How Query Formulation Shapes Sycophancy in Romantic Relationship Advice](https://aclanthology.org/2026.luhme-1.21/) *(2026)* — Studies how phrasing and perspective shape social sycophancy in relationship advice.
 
-[Study notes](literature/selected-papers.md#behavioral-definitions-and-social-sycophancy) · [Back to contents](#contents)
-
 - [Decomposing LLM Advice Sycophancy: Content, Style, and Framing Drive Distinct Response Dimensions](https://aclanthology.org/2026.aacl-long.12/) *(2026)* — Separates the effects of advice content, writing style, and whose perspective is presented on warmth, endorsement, and recommendation directness.
 
+[Study notes](literature/selected-papers.md#behavioral-definitions-and-social-sycophancy) · [Back to contents](#contents)
 
 ## Evaluation and benchmarks
 
@@ -90,14 +89,13 @@ Benchmarks and measurement protocols for answer reversals, sustained pressure, s
 - [BenSyc: Benchmarking Conversational Sycophancy and Human Alignment in LLMs for Bengali Contexts](https://arxiv.org/abs/2606.10061) *(2026)* — Introduces a Bengali benchmark that distinguishes empathetic support from excessive validation.
 - [Discovering Language Model Behaviors with Model-Written Evaluations](https://aclanthology.org/2023.findings-acl.847/) *(2023)* — Uses model-written evaluations to identify behaviors including repetition of users' preferred answers.
 
-[Study notes](literature/selected-papers.md#evaluation-and-benchmarks) · [Back to contents](#contents)
-
 - [Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment](https://arxiv.org/abs/2311.08596) *(2023)* — Early controlled two-turn challenge experiment measuring answer flips and accuracy deterioration without new evidence.
 - [Understanding the Effects of Iterative Prompting on Truthfulness](https://proceedings.mlr.press/v235/krishna24a.html) *(2024)* — Tests how repeated prompting can degrade truthfulness and calibration, and evaluates prompting variants that improve reliability.
 - [Challenging the Evaluator: LLM Sycophancy Under User Rebuttal](https://aclanthology.org/2025.findings-emnlp.1222/) *(2025)* — Contrasts sequential user rebuttals with simultaneous evaluation of opposing arguments and examines effects of critique wording.
 - [SycEval: Evaluating LLM Sycophancy](https://ojs.aaai.org/index.php/AIES/article/view/36598) *(2025)* — Tests factual answer changes under rebuttals in mathematical and medical question-answering and distinguishes progressive from regressive changes.
 - [Accounting for Sycophancy in Language Model Uncertainty Estimation](https://aclanthology.org/2025.findings-naacl.438/) *(2025)* — Shows how user correctness and confidence alter answer behavior and uncertainty estimation; proposes SyRoUP.
 
+[Study notes](literature/selected-papers.md#evaluation-and-benchmarks) · [Back to contents](#contents)
 
 ## Training mechanisms and representations
 
@@ -113,10 +111,9 @@ Preference signals, conversational warmth, interaction context, and internal rep
 - [No Matter Who You Are: Addressivity and Sycophancy in Large Language Models](https://aclanthology.org/2026.emnlp-main.2636/) *(2026)* — Connects post-training representations of addressivity with sycophancy through sparse autoencoders and steering.
 - [Locating Sycophancy Across Training Stages in Open Language Models](https://arxiv.org/abs/2610.37788) *(2026)* — Compares responses to misleading claims across base, supervised-tuned, and preference-tuned checkpoints.
 
-[Study notes](literature/selected-papers.md#training-mechanisms-and-representations) · [Back to contents](#contents)
-
 - [Sycophantic Anchors: Localizing and Quantifying User Agreement in Reasoning Models](https://arxiv.org/abs/2601.21183) *(2026)* — Locates causal points in reasoning traces where a model becomes committed to an incorrect user suggestion.
 
+[Study notes](literature/selected-papers.md#training-mechanisms-and-representations) · [Back to contents](#contents)
 
 ## Mitigation and rational updating
 
@@ -133,10 +130,9 @@ Methods that reduce unsupported agreement while examining reasoning quality, sel
 - [Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL](https://arxiv.org/abs/2611.09828) *(2026)* — Studies monitor-based interventions for reward hacking, including sycophancy in medical chat.
 - [Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability](https://arxiv.org/abs/2609.35544) *(2026)* — Tests whether reducing sycophancy also improves refusal, finding different effects across settings.
 
-[Study notes](literature/selected-papers.md#mitigation-and-rational-updating) · [Back to contents](#contents)
-
 - [Teaching Models to Balance Resisting and Accepting Persuasion](https://aclanthology.org/2025.naacl-long.412/) *(2025)* — Introduces persuasion-balanced training to resist misleading influence while preserving uptake of beneficial arguments.
 
+[Study notes](literature/selected-papers.md#mitigation-and-rational-updating) · [Back to contents](#contents)
 
 ## Multimodal sycophancy
 
