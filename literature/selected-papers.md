@@ -4,7 +4,7 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries.
 
-This index classifies 81 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 83 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
@@ -14,8 +14,8 @@ This index classifies 81 selected studies by their primary research focus. Some 
 - [Mitigation and rational updating](#mitigation-and-rational-updating) (11)
 - [Multimodal sycophancy](#multimodal-sycophancy) (8)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (9)
-- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (5)
-- [Related surveys and background](#related-surveys-and-background) (2)
+- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (6)
+- [Related surveys and background](#related-surveys-and-background) (3)
 - [Memory and personalization](#memory-and-personalization) (2)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (5)
 
@@ -347,6 +347,11 @@ Through analysis of Reddit discussions, the authors examine how users notice syc
 
 Two experiments examine how people respond to noticeable mistakes by an AI adviser or a human expert. Simple AI apologies did not reliably restore reliance or confidence after an error. In objective estimation tasks, apologies attributing errors to external factors supported better recovery of reliance than internally attributed apologies, while comparable effects on confidence and in subjective tasks were not established.
 
+**Yang, Y., & Jia, R. (2026).** [When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction](https://proceedings.colm.cc/paper_files/paper/2026/hash/133239b0506b84c802a12b0e5a764a17-Abstract-Conference.html). *Proceedings of the Conference on Language Modeling (COLM 2026), Volume 3 (pre-proceedings); arXiv:2505.16170.*
+
+The authors define retraction as a model spontaneously and immediately acknowledging an incorrect assertion during its own generation. Across model-specific testbeds, such retractions are rare even when separate queries reveal relevant factual knowledge. Linear probes of momentary internal belief predict retraction and steering interventions suggest a causal relationship. **Scope:** this is direct evidence about spontaneous self-retraction, not a test of whether an apology induced by a user's challenge is warranted, nor of conversational pressure-invariance. It narrows claims that acknowledgement has not been empirically studied.
+
+
 ## Related surveys and background
 
 Adjacent literature on model correction that informs the survey but is not direct experimental evidence of sycophancy.
@@ -358,6 +363,11 @@ This critical survey reviews when inference-time self-correction succeeds or fai
 **Zou, A., Phan, L., Chen, S., et al. (2023).** [Representation Engineering: A Top-Down Approach to AI Transparency](https://arxiv.org/abs/2310.01405). *arXiv:2310.01405*.
 
 This paper introduces representation engineering for monitoring and steering high-level model behavior. It provides methodological background for mechanistic sycophancy studies, rather than a dedicated sycophancy benchmark.
+
+**Harland, H., Dazeley, R., Senaratne, H., Vamplew, P., Cruz, F., & Nakisa, B. (2025).** [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8). *Artificial Intelligence Review*, 58, Article 369.
+
+This critical review synthesizes AI-apology research published in 2020–2023 and organizes it around five elements: outcome, interaction, offence, recipient, and offender. It discusses twelve components and twelve moderators of AI apology. **Scope:** prior conceptual and human–AI interaction work, not an independent experiment testing whether an LLM's apology or error admission is epistemically true. It must be credited when defining apology or asserting novelty; the survey can instead ask whether conversational correction benchmarks verify the factual warrant and behavioral consequences of such speech acts.
+
 
 ## Memory and personalization
 
