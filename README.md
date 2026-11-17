@@ -2,7 +2,7 @@
 
 A curated reading list on sycophancy, user trust, and retention-related behaviors in language models: how they arise, how to measure them, and how to mitigate them.
 
-[![Studies: 81](https://img.shields.io/badge/Studies-81-334155)](#contents)
+[![Studies: 83](https://img.shields.io/badge/Studies-83-334155)](#contents)
 [![Topics: 10](https://img.shields.io/badge/Topics-10-334155)](#contents)
 [![Study notes](https://img.shields.io/badge/Read-Study_notes-2563eb)](literature/selected-papers.md)
 
@@ -20,8 +20,8 @@ A curated reading list on sycophancy, user trust, and retention-related behavior
 - [Mitigation and rational updating](#mitigation-and-rational-updating) (11)
 - [Multimodal sycophancy](#multimodal-sycophancy) (8)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (9)
-- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (5)
-- [Related surveys and background](#related-surveys-and-background) (2)
+- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (6)
+- [Related surveys and background](#related-surveys-and-background) (3)
 - [Memory and personalization](#memory-and-personalization) (2)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (5)
 - [Contributing](#contributing)
@@ -39,7 +39,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **81 studies across ten topics**. Eight additions selected on 2026-11-17 are documented here; their manuscript inclusion should be reconciled against the screening protocol before claiming a PRISMA count. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **83 studies across ten topics**. Eight additions selected on 2026-11-17 are documented here; their manuscript inclusion should be reconciled against the screening protocol before claiming a PRISMA count. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 The current coverage centers on sycophancy, factual correction, apologies, trust, and personalization. User retention is a motivating question: studies of trust, reliance, or dependence should not automatically be read as direct measurements of long-term retention.
 
@@ -175,6 +175,8 @@ User experiences, downstream effects of affirmation, and responses to AI apologi
 - [LLM Sycophancy: How Users Flag and Respond](https://proceedings.mlr.press/v318/noshin26a.html) *(2026)* — Analyzes how users notice, test, and respond to sycophancy in Reddit discussions.
 - [Apologizing artificial intelligence: designing and evaluating effective AI apologies after errors](https://doi.org/10.1007/s00146-026-03067-w) *(2026)* — Examines when AI apologies restore reliance or confidence, with effects varying by task and attribution.
 
+- [When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction](https://proceedings.colm.cc/paper_files/paper/2026/hash/133239b0506b84c802a12b0e5a764a17-Abstract-Conference.html) *(2026)* — Studies spontaneous, immediate retraction of a model's own false assertions and the relation between momentary internal belief and error admission; distinct from user-triggered apology and correction.
+
 [Study notes](literature/selected-papers.md#human-effects-apologies-and-trust) · [Back to contents](#contents)
 
 ## Related surveys and background
@@ -183,6 +185,8 @@ Adjacent literature on model correction that informs the survey but is not direc
 
 - [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/) *(2024)* — Reviews when self-correction works, emphasizing reliable feedback and fair comparisons.
 - [Representation Engineering: A Top-Down Approach to AI Transparency](https://arxiv.org/abs/2310.01405) *(2023)* — Introduces methods for monitoring and steering model representations used in later mechanistic studies.
+
+- [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8) *(2025)* — Synthesizes AI-apology research, including twelve apology components and a context-sensitive framework; foundational background rather than evidence of model-level sycophancy.
 
 [Study notes](literature/selected-papers.md#related-surveys-and-background) · [Back to contents](#contents)
 
