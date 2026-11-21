@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Fetch official published PDFs locally from the curated manifest.
+"""Download official publisher PDF URLs from the curated CSV to a LOCAL ignored folder.
 
-This is a user-invoked local utility: it does NOT claim to upload PDFs to GitHub.
-Do not redistribute downloaded files unless the specific publisher/license allows it.
+Does not commit to GitHub. Check paper-specific redistribution licenses before sharing.
 """
 import argparse
 import csv
@@ -10,40 +9,39 @@ import pathlib
 import re
 import urllib.request
 
-ROOT = pathlib.Path(__file__).resolve().parent
+HERE = pathlib.Path(__file__).resolve().parent
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", default=str(ROOT / "downloaded-official-pdfs"))
-    parser.add_argument("--tier", choices=["A", "B", "all"], default="A")
-    parser.add_argument("--only-licensed", action="store_true",
-                        help="Only fetch rows provisionally tagged CC-BY-4.0; still verify license")
+    parser.add_argument("--output", type=pathlib.Path, default=HERE / "downloaded-official-pdfs")
+    parser.add_argument("--priority", choices=["E", "S", "all"], default="E")
     args = parser.parse_args()
-    dest = pathlib.Path(args.output)
-    dest.mkdir(parents=True, exist_ok=True)
-    rows = csv.DictReader((ROOT / "core-conference-manifest.csv").open(encoding="utf-8"))
+    args.output.mkdir(parents=True, exist_ok=True)
+    with (HERE / "core-conference-manifest.csv").open(encoding="utf-8", newline="") as stream:
+        rows = list(csv.DictReader(stream))
     for row in rows:
-        if args.tier != "all" and row["priority"] != args.tier:
+        if args.priority != "all" and row["priority_E_essential_S_supporting"] != args.priority:
             continue
-        if args.only_licensed and row["archive_policy"] != "CC-BY-4.0":
+        url = row["official_pdf_url_if_located"]
+        if not url:
+            print("NO DIRECT PUBLISHER PDF:", row["paper_id"], row["official_publication_url"])
             continue
-        name = re.sub(r"[^A-Za-z0-9_.-]", "_", row["id"]) + ".pdf"
-        output = dest / name
-        if output.exists():
-            print("skip", output.name)
+        name = re.sub(r"[^A-Za-z0-9_.-]", "_", row["paper_id"]) + ".pdf"
+        destination = args.output / name
+        if destination.exists():
+            print("EXISTS:", destination.name)
             continue
-        req = urllib.request.Request(row["official_pdf_url"],
-                                     headers={"User-Agent": "academic-literature-fetch/1.0"})
+        request = urllib.request.Request(url, headers={"User-Agent":"AcademicSurveyResearch/1.0"})
         try:
-            with urllib.request.urlopen(req, timeout=45) as response:
+            with urllib.request.urlopen(request, timeout=40) as response:
                 data = response.read()
-                if not data.startswith(b"%PDF-"):
-                    raise ValueError("Publisher did not return a PDF")
-                output.write_bytes(data)
-                print("saved", output)
+            if not data.startswith(b"%PDF-"):
+                raise ValueError("No PDF magic header")
+            destination.write_bytes(data)
+            print("SAVED:", destination.name)
         except Exception as exc:
-            print("FAILED", row["id"], row["official_pdf_url"], str(exc))
-    print("Downloaded PDFs are local only. Check license before public GitHub mirroring.")
+            print("FAILED:", row["paper_id"], str(exc))
+    print("Local research copies only; do not upload without checking redistribution rights.")
 
 if __name__ == "__main__":
     main()
