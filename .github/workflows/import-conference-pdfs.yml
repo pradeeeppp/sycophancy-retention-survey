@@ -21,6 +21,7 @@ jobs:
             curl --proto '=https' --proto-redir '=https' --location --fail --silent --show-error --retry 3 --max-time 90 "$url" --output "$file"
             test "$(head -c 5 "$file")" = '%PDF-'
             test "$(wc -c < "$file")" -gt 20000
+            if command -v pdfinfo >/dev/null; then pdfinfo "$file" >/dev/null; fi
           done <<'PAPERS'
           2022.acl-long.447 https://aclanthology.org/2022.acl-long.447.pdf
           2024.acl-long.577 https://aclanthology.org/2024.acl-long.577.pdf
