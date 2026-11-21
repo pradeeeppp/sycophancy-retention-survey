@@ -14,7 +14,7 @@
 
 ## Search coverage and vocabulary
 
-Search *titles and abstracts* in ACL Anthology (ACL, EMNLP, NAACL, EACL; main proceedings), OpenReview/ICLR official accepted conference proceedings, PMLR/ICML, NeurIPS proceedings, CVF Open Access (CVPR, ICCV), ECCV/Springer, and ACM DL (CHI). Record each database, search date, exact query, filter and export file. Citation chasing is a separately labeled route. Run searches over 2022–2026; extend backwards for important foundational dialogue/grounding work. Do not restrict study designs based on positive results.
+For the **future complete systematic review**, search *titles and abstracts* in ACL Anthology (ACL, EMNLP, NAACL, EACL; main proceedings), OpenReview/ICLR official accepted conference proceedings, PMLR/ICML, NeurIPS proceedings, CVF Open Access (CVPR, ICCV), ECCV/Springer, and ACM DL (CHI). Record each database, search date, exact query, filter and export file. Citation chasing is a separately labeled route. Run searches over 2022–2026; extend backwards for important foundational dialogue/grounding work. Do not restrict study designs based on positive results.
 
 Use this broad, adapt-to-database Boolean query, then narrower combinations where search interfaces limit syntax:
 
@@ -33,13 +33,16 @@ For multimodal searches add `("visual evidence" OR "misleading hint" OR "image-t
 
 ## Inclusion and exclusion rules
 
-**Core eligible:** final, officially published **main-conference** paper in ACL, EMNLP, NAACL, EACL, ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV or CHI; empirical intervention, benchmark, user study or model-behavior study; directly measures agreement, opposition, evidence-sensitive revision, apology, feedback acknowledgement, social conformity, or debate agreement, with an observable outcome. Peer review and main-track status must be confirmed by the publisher.
+**Core candidate eligible:** final, officially published main-conference research paper in ACL, EMNLP, NAACL, EACL, ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV or CHI, plus peer-reviewed archival NeurIPS Datasets and Benchmarks papers explicitly labeled as such; empirical intervention, benchmark, user study or model-behavior study; directly measures agreement, opposition, evidence-sensitive revision, apology, feedback acknowledgement, social conformity, or debate agreement, with an observable outcome. Peer review and main-track status must be confirmed by the publisher.
 
-**Exclude from strict core:** arXiv-only/preprints, under-review or withdrawn manuscripts, Findings tracks, workshops, student research workshops, non-main tracks, journals, surveys, opinion-only position pieces without original data, duplicates, and papers mentioning sycophancy only tangentially. Retain useful excluded papers in the existing 69-study *background* collection without counting them as core.
+**Exclude from strict core:** arXiv-only/preprints, under-review or withdrawn manuscripts, Findings tracks, workshops, student research workshops, non-archival satellite tracks, journals, surveys, position/opinion pieces without primary empirical or theoretical contributions, duplicates, and papers mentioning sycophancy only tangentially. Archival NeurIPS Datasets and Benchmarks is separately identified, not a workshop. Retain useful excluded papers in the existing 69-study *background* collection without counting them as core.
 
 **Important:** Conference tier is a *publication filter*, not proof of causal quality. Prioritize designs that vary pressure independently from evidence quality, distinguish initial accuracy, and evaluate both beneficial and harmful answer revisions.
 
 ## Screening process
+
+**This is a protocol, not a claim these steps were completed.** The current cross-venue [discovery log](cross-venue-discovery-log.md) records targeted publisher searches, not PRISMA denominators.
+
 
 1. Export bibliographic records with source and search timestamp; compute search hit counts per venue. No unlogged purposive additions.
 2. Deduplicate by DOI, ACL Anthology ID, proceedings URL, normalized title, and accepted-version match. Keep the final published version.
@@ -59,7 +62,7 @@ For multimodal searches add `("visual evidence" OR "misleading hint" OR "image-t
 | Transparency/reproducibility | sparse | partial | sample, prompts, models and eval documented |
 | Survey synthesis value | redundant | useful | distinctive comparison, mechanism or consequence |
 
-**Tier A:** high direct relevance and informative comparator; **Tier B:** useful published core context. The tiers in [core-conference-manifest.csv](../papers/core-conference-manifest.csv) are *provisional relevance tiers*, not scored methodological-risk assessments. A full-text rubric and evidence extraction are still required. Do not turn them into numeric claims before coding.
+**Priority E (essential):** high direct relevance and an informative comparator or distinctive human outcome; **Priority S (supporting):** meaningful but narrower context. The E/S labels in [core-conference-manifest.csv](../papers/core-conference-manifest.csv) are provisional topic-fit assessments, NOT scored risk-of-bias or full-text-quality assessments. A full-text rubric and evidence extraction are still required. Do not turn them into numeric claims before coding.
 
 ## Extraction schema
 
