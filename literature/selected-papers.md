@@ -4,17 +4,17 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries for the published studies retained under the reading list's inclusion policy.
 
-This index classifies 52 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 69 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
-- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (6)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (12)
+- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (9)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (13)
 - [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
-- [Mitigation and rational updating](#mitigation-and-rational-updating) (5)
-- [Multimodal sycophancy](#multimodal-sycophancy) (5)
-- [Multi-agent sycophancy](#multi-agent-sycophancy) (3)
-- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (6)
+- [Mitigation and rational updating](#mitigation-and-rational-updating) (8)
+- [Multimodal sycophancy](#multimodal-sycophancy) (7)
+- [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
+- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
 - [Related surveys and background](#related-surveys-and-background) (2)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 
@@ -45,6 +45,18 @@ Using relationship-advice prompts, the authors compare how different phrasings a
 **Singh, J., & Kaynig-Fittkau, V. (2026).** [Decomposing LLM Advice Sycophancy: Content, Style, and Framing Drive Distinct Response Dimensions](https://aclanthology.org/2026.aacl-long.12/). *Proceedings of AACL-IJCNLP 2026 (Long Papers), 255–274.*
 
 Across 787 advice-seeking scenarios, the study independently varies semantic content, linguistic style, and narrative framing. Emotional warmth tracks content, stance endorsement tracks framing, and recommendation directness tracks style. The paper is directly relevant to distinguishing social validation from factual agreement and to avoiding interventions that mistakenly suppress empathy.
+
+**Calvin Isch, Grace Jennings (2026).** [Narrative License and Model Sycophancy in LLM Summaries of Scientific Work](https://aclanthology.org/2026.acl-long.746/). *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 16418–16432.
+
+Varies reader stance and persona when six models summarize scientific work and measures shifts in claim strength, certainty and sentiment. A summary can amplify a claim to please a reader without reversing a discrete answer.
+
+**Arya Shah, Deepali Mishra, Chaklam Silpasuwanchai (2026).** [Too Nice to Tell the Truth: Quantifying Agreeableness-Driven Sycophancy in Role-Playing Language Models](https://aclanthology.org/2026.acl-long.1421/). *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 30788–30801.
+
+Tests the association between assigned persona agreeableness and user validation in 13 open-weight models. The manipulation concerns role-playing personas. Polite wording alone cannot establish a factual concession.
+
+**Li-Ni Fu, Chang Chih Meng, Chien-Hua Chen, Hen-Hsen Huang, I-Chen Wu (2026).** [How Identity and Opinion Shape Political Sycophancy in LLMs](https://aclanthology.org/2026.emnlp-main.1500/). *Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing*, 34269–34299.
+
+Separates the effects of a user’s stated political opinion and demographic identity across controlled political dilemmas. Score movement relative to the model’s baseline stance. Many items have no single correct political position.
 
 ## Evaluation and benchmarks
 
@@ -97,6 +109,10 @@ SycEval evaluates three assistants on mathematics and medical questions, compari
 **Sicilia, A., Inan, M., & Alikhani, M. (2025).** [Accounting for Sycophancy in Language Model Uncertainty Estimation](https://aclanthology.org/2025.findings-naacl.438/). *Findings of NAACL 2025, 7866–7881.*
 
 This work studies uncertainty shifts induced by user suggestions, varying their correctness and confidence, and proposes SyRoUP to account for sycophancy in uncertainty estimation. It broadens the survey's measures beyond binary flipping and supports separating confidence as a social cue from the actual reliability of evidence.
+
+**Qiming Xie, Zengzhi Wang, Yi Feng, Rui Xia (2024).** [Ask Again, Then Fail: Large Language Models’ Vacillations in Judgment](https://aclanthology.org/2024.acl-long.577/). *Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 10709–10745.
+
+Uses follow-up questions to measure when an initially correct answer changes, then tests a mitigation trained on preference pairs. Correct-answer retention measures resistance. Initially wrong answers are needed to measure recovery.
 
 ## Training mechanisms and representations
 
@@ -162,6 +178,18 @@ The authors introduce supervised pinpoint tuning, which identifies and updates f
 
 Persuasion-Balanced Training (PBT) uses dialogue trees and preference optimization to improve both resistance to adversarial persuasion and acceptance of helpful persuasion. The authors also report more stable multi-agent debate results. This is a central comparator for the survey's resistance–receptiveness trade-off.
 
+**Chien-Hung Chen, Hen-Hsen Huang, Hsin-Hsi Chen (2025).** [Self-Augmented Preference Alignment for Sycophancy Reduction in LLMs](https://aclanthology.org/2025.emnlp-main.625/). *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing*, 12379–12391.
+
+Trains a model to evaluate a user’s expected answer before responding and compares sycophancy across preference-alignment conditions. Test conclusions about answer assessment separately from open-ended social validation.
+
+**Giulia Pucci, Leonardo Ranaldi (2025).** [Advancing Oversight Reasoning across Languages for Audit Sycophantic Behaviour via X-Agent](https://aclanthology.org/2025.emnlp-main.654/). *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing*, 12949–12965.
+
+Uses a multilingual oversight agent to audit conversations and correct answers that follow a user’s mistaken view. An oversight agent correcting a response plays a different role from a peer persuading another debater.
+
+**Mohammad Beigi, Ying Shen, Parshin Shojaee, Qifan Wang, Zichao Wang, Chandan K. Reddy, Ming Jin, Lifu Huang (2025).** [Sycophancy Mitigation Through Reinforcement Learning with Uncertainty-Aware Adaptive Reasoning Trajectories](https://aclanthology.org/2025.emnlp-main.661/). *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing*, 13079–13092.
+
+Tests uncertainty-guided reasoning search and reinforcement learning as interventions against sycophancy. Reduced agreement with bad hints leaves a separate question about receptiveness to good evidence.
+
 ## Multimodal sycophancy
 
 Image- and video-grounded studies of misleading textual context and visual evidence.
@@ -186,6 +214,14 @@ This study describes a sycophantic modality gap in image-grounded dialogue. Naiv
 
 PRISM-VLM scores compact vision-language models on multiple behavioral and capability axes. Its per-axis analysis includes sycophancy, which can be obscured by a single aggregate accuracy score.
 
+**Yunkai Dang, Mengxi Gao, Yibo Yan, Xin Zou, Yanggan Gu, Jungang Li, Jingyu Wang, Peijie Jiang, Aiwei Liu, Jia Liu, Xuming Hu (2025).** [Exploring Response Uncertainty in MLLMs: An Empirical Evaluation under Misleading Scenarios](https://aclanthology.org/2025.emnlp-main.916/). *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing*, 18132–18173.
+
+Elicits an initial answer about an image, then introduces an explicit false hint or a conflicting context and measures answer changes. The flip rate is conditional on an initially correct answer. The difficulty-selected benchmark also has a different denominator from its source datasets.
+
+**Mengliang Zhang, Prajwal Challa, Wentao Gao (2026).** [Unmasking Superficial Honesty: Mechanistic Head-Driven Activation Steering for Sycophancy-Free Medical VLMs](https://aclanthology.org/2026.emnlp-main.1732/). *Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing*, 39531–39544.
+
+Tests misleading clinical assertions against image evidence and evaluates an attention-head intervention on two medical VQA datasets. Report visual grounding and answer flips separately. Benchmark improvements cannot establish clinical outcomes.
+
 ## Multi-agent sycophancy
 
 Peer influence, debate convergence, identity effects, and reliability-sensitive group reasoning.
@@ -201,6 +237,22 @@ The authors test whether informing agents about their peers' tendency toward syc
 **Pitre, P., Ramakrishnan, N., & Wang, X. (2025).** [CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation](https://aclanthology.org/2025.findings-acl.1141/). *Findings of the Association for Computational Linguistics: ACL 2025*, 22112–22133.
 
 The authors investigate how agents can reinforce one another's answers without adequate critical exchange. CONSENSAGENT dynamically refines debate prompts and is evaluated on reasoning accuracy and efficiency across several benchmarks. Improvements in multi-agent accuracy are related to, but not interchangeable with, reductions in user-facing sycophancy.
+
+**Xiaochen Zhu, Caiqi Zhang, Tom Stafford, Nigel Collier, Andreas Vlachos (2025).** [Conformity in Large Language Models](https://aclanthology.org/2025.acl-long.195/). *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 3854–3872.
+
+Varies the majority answer and tests whether an individual model’s initial uncertainty predicts conformity. An experimentally supplied majority gives a controlled comparison. It captures only one part of an interactive debate.
+
+**Xiaoyang Wang, Christopher Yang (2026).** [The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment](https://aclanthology.org/2026.emnlp-main.1780/). *Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing*, 40561–40581.
+
+Measures whether rationales converge when agents agree on a medical answer and tests a protocol that elicits explicit positions on peer claims. Agreement on an answer can conceal different rationales. Rationale similarity is also an imperfect proxy for accuracy.
+
+**Yufei Zhang, Kai Xiong, Yuxiong Yan, Bibo Cai, Xiao Ding, Bing Qin, Ting Liu (2026).** [Debate-aware Learning Makes LLMs Genuine Debaters](https://aclanthology.org/2026.emnlp-main.1907/). *Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing*, 43450–43471.
+
+Measures whether debaters engage with rebuttals and revise beliefs in proportion to argument strength, and tests a debate-training framework. Responding to an argument and accepting its conclusion are distinct outcomes. Record how argument strength is scored.
+
+**Zhiyuan Weng, Guikun Chen, Wenguan Wang (2025).** [Do as We Do, Not as You Think: the Conformity of Large Language Models](https://proceedings.iclr.cc/paper_files/paper/2025/hash/1da9ca7e9cef4b1af63913f05d1630a4-Abstract-Conference.html). *International Conference on Learning Representations*.
+
+BenchForm varies interaction protocol and majority influence to measure conformity and independence in groups of language-model agents. Read conformity alongside correctness. A majority that supplies new evidence may improve the group’s decision.
 
 ## Human effects, apologies, and trust
 
@@ -229,6 +281,22 @@ Two experiments examine how people respond to noticeable mistakes by an AI advis
 **Yang, Y., & Jia, R. (2026).** [When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction](https://proceedings.colm.cc/paper_files/paper/2026/hash/133239b0506b84c802a12b0e5a764a17-Abstract-Conference.html). *Proceedings of the Conference on Language Modeling (COLM 2026), Volume 3 (pre-proceedings).*
 
 The authors define retraction as a model spontaneously and immediately acknowledging an incorrect assertion during its own generation. Across model-specific testbeds, such retractions are rare even when separate queries reveal relevant factual knowledge. Linear probes of momentary internal belief predict retraction and steering interventions suggest a causal relationship. **Scope:** this is direct evidence about spontaneous self-retraction, not a test of whether an apology induced by a user's challenge is warranted, nor of conversational pressure-invariance. It narrows claims that acknowledgement has not been empirically studied.
+
+**Megan Ung, Jing Xu, Y-Lan Boureau (2022).** [SaFeRDialogues: Taking Feedback Gracefully after Conversational Safety Failures](https://aclanthology.org/2022.acl-long.447/). *Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 6462–6481.
+
+Pairs a conversational safety failure with feedback and a response acknowledging it. Human raters evaluated whether the resulting exchange could proceed civilly. The excessive-apology examples show why the appropriateness of an apology needs its own label.
+
+**Omar Shaikh, Kristina Gligorić, Ashna Khetan, Matthias Gerstgrasser, Diyi Yang, Dan Jurafsky (2024).** [Grounding Gaps in Language Model Generations](https://aclanthology.org/2024.naacl-long.348/). *Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)*, 6279–6296.
+
+Compares acknowledgement and clarification in human and model dialogue. Models more often proceed as if common ground already exists. An acknowledgement can signal receipt or understanding while leaving factual agreement unresolved.
+
+**Clara Lachenmaier, Hannah Bultmann, Sina Zarrieß (2026).** [Talking to a Know-It-All GPT or a Second-Guesser Claude? How Repair reveals distinct Multi-Turn Behavior in LLMs](https://aclanthology.org/2026.acl-long.651/). *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 14312–14325.
+
+Compares model-initiated and user-initiated repair on solvable and unsolvable math questions. Models vary in receptiveness to warranted and misleading challenges. Record who initiated repair, whether the challenge was warranted, and whether the new answer resolves the issue.
+
+**Jeongwoo Ryu, Soomin Kim, Jinsu Eun, Kyusik Kim, Changhoon Oh, Bongwon Suh (2026).** [Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation](https://aclanthology.org/2026.acl-long.2046/). *Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 44227–44245.
+
+Compares agreement, withholding challenge and neutral responses in a 31-person study of moral deliberation. Confidence and open-mindedness can move in different directions. The study measures short-term human outcomes on value-laden dilemmas. It cannot establish long-term retention.
 
 ## Related surveys and background
 

@@ -1,8 +1,10 @@
-# Sycophancy & User Retention in Language Models
+# Agreeing for the Right Reasons: A Survey of Sycophancy, Apology, and Acknowledgement in Language, Vision-Language, and Multi-Agent Models
 
-A curated reading list on sycophancy, user trust, and retention-related behaviors in language models: how they arise, how to measure them, and how to mitigate them.
+When a user or another agent challenges a model, what distinguishes an evidence-based update from unwarranted agreement? The collection covers responses to disagreement, dialogue repair, visual grounding and peer influence.
 
-[![Studies: 52](https://img.shields.io/badge/Studies-52-334155)](#contents)
+[Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
+
+[![Studies: 69](https://img.shields.io/badge/Studies-69-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
 [![Study notes](https://img.shields.io/badge/Read-Study_notes-2563eb)](literature/selected-papers.md)
 
@@ -14,13 +16,13 @@ A curated reading list on sycophancy, user trust, and retention-related behavior
 
 - [Start here](#start-here)
 - [Scope and reading guide](#scope-and-reading-guide)
-- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (6)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (12)
+- [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (9)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (13)
 - [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
-- [Mitigation and rational updating](#mitigation-and-rational-updating) (5)
-- [Multimodal sycophancy](#multimodal-sycophancy) (5)
-- [Multi-agent sycophancy](#multi-agent-sycophancy) (3)
-- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (6)
+- [Mitigation and rational updating](#mitigation-and-rational-updating) (8)
+- [Multimodal sycophancy](#multimodal-sycophancy) (7)
+- [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
+- [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
 - [Related surveys and background](#related-surveys-and-background) (2)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 - [Contributing](#contributing)
@@ -38,7 +40,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **52 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **69 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 Only studies with a journal, conference, or workshop publication record are included. Preprint-only entries are excluded; conference papers hosted in official pre-proceedings are retained with that status stated in the study notes.
 
@@ -66,6 +68,9 @@ Definitions, interpersonal affirmation, epistemic authority, and the pragmatics 
 - [Decomposing LLM Advice Sycophancy: Content, Style, and Framing Drive Distinct Response Dimensions](https://aclanthology.org/2026.aacl-long.12/) *(2026)* — Separates the effects of advice content, writing style, and whose perspective is presented on warmth, endorsement, and recommendation directness.
 
 [Study notes](literature/selected-papers.md#behavioral-definitions-and-social-sycophancy) · [Back to contents](#contents)
+- [Narrative License and Model Sycophancy in LLM Summaries of Scientific Work](https://aclanthology.org/2026.acl-long.746/) *(2026)* — Varies reader stance and persona when six models summarize scientific work and measures shifts in claim strength, certainty and sentiment.
+- [Too Nice to Tell the Truth: Quantifying Agreeableness-Driven Sycophancy in Role-Playing Language Models](https://aclanthology.org/2026.acl-long.1421/) *(2026)* — Tests the association between assigned persona agreeableness and user validation in 13 open-weight models.
+- [How Identity and Opinion Shape Political Sycophancy in LLMs](https://aclanthology.org/2026.emnlp-main.1500/) *(2026)* — Separates the effects of a user’s stated political opinion and demographic identity across controlled political dilemmas.
 
 ## Evaluation and benchmarks
 
@@ -86,6 +91,7 @@ Benchmarks and measurement protocols for answer reversals, sustained pressure, s
 - [Accounting for Sycophancy in Language Model Uncertainty Estimation](https://aclanthology.org/2025.findings-naacl.438/) *(2025)* — Shows how user correctness and confidence alter answer behavior and uncertainty estimation; proposes SyRoUP.
 
 [Study notes](literature/selected-papers.md#evaluation-and-benchmarks) · [Back to contents](#contents)
+- [Ask Again, Then Fail: Large Language Models’ Vacillations in Judgment](https://aclanthology.org/2024.acl-long.577/) *(2024)* — Uses follow-up questions to measure when an initially correct answer changes, then tests a mitigation trained on preference pairs.
 
 ## Training mechanisms and representations
 
@@ -116,6 +122,9 @@ Methods that reduce unsupported agreement while examining reasoning quality, sel
 - [Teaching Models to Balance Resisting and Accepting Persuasion](https://aclanthology.org/2025.naacl-long.412/) *(2025)* — Introduces persuasion-balanced training to resist misleading influence while preserving uptake of beneficial arguments.
 
 [Study notes](literature/selected-papers.md#mitigation-and-rational-updating) · [Back to contents](#contents)
+- [Self-Augmented Preference Alignment for Sycophancy Reduction in LLMs](https://aclanthology.org/2025.emnlp-main.625/) *(2025)* — Trains a model to evaluate a user’s expected answer before responding and compares sycophancy across preference-alignment conditions.
+- [Advancing Oversight Reasoning across Languages for Audit Sycophantic Behaviour via X-Agent](https://aclanthology.org/2025.emnlp-main.654/) *(2025)* — Uses a multilingual oversight agent to audit conversations and correct answers that follow a user’s mistaken view.
+- [Sycophancy Mitigation Through Reinforcement Learning with Uncertainty-Aware Adaptive Reasoning Trajectories](https://aclanthology.org/2025.emnlp-main.661/) *(2025)* — Tests uncertainty-guided reasoning search and reinforcement learning as interventions against sycophancy.
 
 ## Multimodal sycophancy
 
@@ -128,6 +137,8 @@ Image- and video-grounded studies of misleading textual context and visual evide
 - [PRISM-VLM: A Multi-Axis Discriminative Benchmark for Compact Vision-Language Models](https://aclanthology.org/2026.findings-emnlp.2475/) *(2026)* — Evaluates compact vision-language models on separate capability and behavioral axes, including sycophancy.
 
 [Study notes](literature/selected-papers.md#multimodal-sycophancy) · [Back to contents](#contents)
+- [Exploring Response Uncertainty in MLLMs: An Empirical Evaluation under Misleading Scenarios](https://aclanthology.org/2025.emnlp-main.916/) *(2025)* — Elicits an initial answer about an image, then introduces an explicit false hint or a conflicting context and measures answer changes.
+- [Unmasking Superficial Honesty: Mechanistic Head-Driven Activation Steering for Sycophancy-Free Medical VLMs](https://aclanthology.org/2026.emnlp-main.1732/) *(2026)* — Tests misleading clinical assertions against image evidence and evaluates an attention-head intervention on two medical VQA datasets.
 
 ## Multi-agent sycophancy
 
@@ -138,6 +149,10 @@ Peer influence, debate convergence, identity effects, and reliability-sensitive 
 - [CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation](https://aclanthology.org/2025.findings-acl.1141/) *(2025)* — Uses adaptive debate prompts to address uncritical agreement and evaluates accuracy and efficiency.
 
 [Study notes](literature/selected-papers.md#multi-agent-sycophancy) · [Back to contents](#contents)
+- [Conformity in Large Language Models](https://aclanthology.org/2025.acl-long.195/) *(2025)* — Varies the majority answer and tests whether an individual model’s initial uncertainty predicts conformity.
+- [The Consistency Illusion: How Multi-Agent Debate Hides Reasoning Misalignment](https://aclanthology.org/2026.emnlp-main.1780/) *(2026)* — Measures whether rationales converge when agents agree on a medical answer and tests a protocol that elicits explicit positions on peer claims.
+- [Debate-aware Learning Makes LLMs Genuine Debaters](https://aclanthology.org/2026.emnlp-main.1907/) *(2026)* — Measures whether debaters engage with rebuttals and revise beliefs in proportion to argument strength, and tests a debate-training framework.
+- [Do as We Do, Not as You Think: the Conformity of Large Language Models](https://proceedings.iclr.cc/paper_files/paper/2025/hash/1da9ca7e9cef4b1af63913f05d1630a4-Abstract-Conference.html) *(2025)* — BenchForm varies interaction protocol and majority influence to measure conformity and independence in groups of language-model agents.
 
 ## Human effects, apologies, and trust
 
@@ -152,6 +167,10 @@ User experiences, downstream effects of affirmation, and responses to AI apologi
 - [When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction](https://proceedings.colm.cc/paper_files/paper/2026/hash/133239b0506b84c802a12b0e5a764a17-Abstract-Conference.html) *(2026)* — Studies spontaneous, immediate retraction of a model's own false assertions and the relation between momentary internal belief and error admission; distinct from user-triggered apology and correction.
 
 [Study notes](literature/selected-papers.md#human-effects-apologies-and-trust) · [Back to contents](#contents)
+- [SaFeRDialogues: Taking Feedback Gracefully after Conversational Safety Failures](https://aclanthology.org/2022.acl-long.447/) *(2022)* — Pairs a conversational safety failure with feedback and a response acknowledging it. Human raters evaluated whether the resulting exchange could proceed civilly.
+- [Grounding Gaps in Language Model Generations](https://aclanthology.org/2024.naacl-long.348/) *(2024)* — Compares acknowledgement and clarification in human and model dialogue. Models more often proceed as if common ground already exists.
+- [Talking to a Know-It-All GPT or a Second-Guesser Claude? How Repair reveals distinct Multi-Turn Behavior in LLMs](https://aclanthology.org/2026.acl-long.651/) *(2026)* — Compares model-initiated and user-initiated repair on solvable and unsolvable math questions. Models vary in receptiveness to warranted and misleading challenges.
+- [Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation](https://aclanthology.org/2026.acl-long.2046/) *(2026)* — Compares agreement, withholding challenge and neutral responses in a 31-person study of moral deliberation. Confidence and open-mindedness can move in different directions.
 
 ## Related surveys and background
 
