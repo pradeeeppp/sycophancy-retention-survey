@@ -2,6 +2,8 @@
 
 When a user or another agent challenges a model, what distinguishes an evidence-based update from unwarranted agreement? The collection covers responses to disagreement, dialogue repair, visual grounding and peer influence.
 
+**New executed screening evidence (review branch):** [89 distinct records, 34 documented metadata exclusions, and 55 candidate full-text reports](research/PRISMA-bounded-executed-screen.md) · [Reproducible JSONL selection ledger](research/repository-screening-snapshot-2026-11-21.jsonl) · [Additional high-fit CVPR/ICML/COLM studies](research/additional-verified-papers.md) · [PRISMA 2020 audit](research/PRISMA-2020-audit.md). **This is a bounded catalog reconciliation, not a completed database-wide systematic review.**
+
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
 **Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
