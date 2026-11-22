@@ -112,6 +112,8 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 
 ## 7. Progress audited in this PR
 
+- [Introduction citation audit](introduction-citation-audit.md) verifies the provided excerpt's author/year/venue claims, including **Pitre et al. 2026** (publisher date) and the **under-review** status of Kasprova's survey. The LaTeX manuscript is not in this repository, so the bibliography itself was not edited.
+
 - [Record-level source verification for all 34 candidate items](publisher-verification-ledger.md) now distinguishes 32 directly accessible publisher pages from two CHI records corroborated by ACM indexing and DBLP. **This completes metadata verification of this known candidate set, not PRISMA identification of all relevant studies.**
 
 - [Source-checked PDF methods and outcomes for four NeurIPS main-track studies](NeurIPS-full-text-evidence.md) are now recorded, with critical comparability limits.
