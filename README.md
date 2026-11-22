@@ -4,7 +4,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Cross-venue, archival-conference curation (15 ACL-family / 16 other):** [31-paper conference shortlist](papers/CORE-CONFERENCE-README.md) · [CSV with official proceedings and PDF URLs](papers/core-conference-manifest.csv) · [PRISMA-style screening protocol](research/main-conference-prisma-protocol.md) · [Cross-venue source and exclusion log](research/cross-venue-discovery-log.md) · [Full-text screening template](research/full-text-screening-template.csv). This is a provisional, topic-fit shortlist, **not** a completed multi-database PRISMA flow; publisher-hosted PDF links are not repository-stored PDF files.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
 
 [![Studies: 69](https://img.shields.io/badge/Studies-69-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
