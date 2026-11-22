@@ -112,6 +112,8 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 
 ## 7. Progress audited in this PR
 
+- [Record-level source verification for all 34 candidate items](publisher-verification-ledger.md) now distinguishes 32 directly accessible publisher pages from two CHI records corroborated by ACM indexing and DBLP. **This completes metadata verification of this known candidate set, not PRISMA identification of all relevant studies.**
+
 - [Source-checked PDF methods and outcomes for four NeurIPS main-track studies](NeurIPS-full-text-evidence.md) are now recorded, with critical comparability limits.
 - [Automated bibliography-integrity validator](validate_review.py) checks candidate count, DOI/proceedings domains, unique publication links, section totals and explicit noncompletion language. Validation does **not** establish scientific completeness.
 - These are real advances within the documented candidate set, not grounds for certifying missing independent screening, venue-wide exports, or systematic risk-of-bias.
