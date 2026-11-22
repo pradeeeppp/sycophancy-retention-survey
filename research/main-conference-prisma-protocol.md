@@ -4,6 +4,10 @@
 
 **As of:** 21 November 2026. This document is a prospective *supplement* to the existing [bounded title-search log](survey-search.md). Do **not** combine its 17,036 / 29 / 26 counts with new records or describe them as a completed cross-database PRISMA flow. Those counts belong only to the previously documented ACL title search.
 
+## Review execution status
+
+**Updated evidence ledger:** [34 publisher-linked candidates](../literature/prisma-core-papers.md), [PRISMA 2020 completeness audit](PRISMA-2020-audit.md), [source-provenance and executed search strings](PRISMA-search-provenance.md). The historical 31-paper CSV is superseded as a reading shortlist and is **not** the final systematic-review selection. No comprehensive search denominator, full-text eligibility decision or independent reviewer consensus has been established. This is a protocol and documented audit, not a completed PRISMA review.
+
 ## Research questions
 
 * RQ1: Under what conditions do models agree, resist, apologize, acknowledge, ask for clarification, or revise an earlier stance?
