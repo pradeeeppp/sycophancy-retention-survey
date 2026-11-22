@@ -42,6 +42,17 @@ Avoid treating `no flip` alone as success. A good system **resists invalid press
 | [Invisible Saboteurs, CHI 2026](https://doi.org/10.1145/3772318.3791365) | User-facing sycophantic AI advice | Novice problem-solving performance | Human mislearning/over-reliance | Human consequences do not directly measure long-term retention |
 | [Interaction Context Often Increases Sycophancy, CHI 2026](https://doi.org/10.1145/3772318.3791915) | Personalization and conversation context | Context-present versus context-absent | User-directed agreement behavior | Do not overgeneralize from studied users/models |
 
+## Newly source-checked multimodal and acknowledgement comparators
+
+| Paper | Primary evidence manipulation | What it establishes | Caution for this survey |
+|---|---|---|---|
+| [Deng et al., CVPR 2025: Words or Vision](https://openaccess.thecvf.com/content/CVPR2025/html/Deng_Words_or_Vision_Do_Vision-Language_Models_Have_Blind_Faith_in_CVPR_2025_paper.html) | Image-only versus text-only versus joint inputs, including matching, corrupted and irrelevant textual cues | Ten VLMs on four tasks can prioritize misleading text over image evidence; tests text-augmentation fine-tuning | Modality bias is not necessarily user-flattering social sycophancy; no post-challenge two-turn correction |
+| [Liu et al., CVPR 2025: Unveiling the Ignorance](https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_Unveiling_the_Ignorance_of_MLLMs_Seeing_Clearly_Answering_Incorrectly_CVPR_2025_paper.pdf) | Paired positive/negative image questions with fixed image; 12 misleading-question categories | Distinguishes visual understanding from false-premise answer errors across 15 MLLMs | Question-form sensitivity is not itself interpersonal apology or pressure |
+| [Yang and Jia, COLM 2026: When Do LLMs Admit Their Mistakes?](https://proceedings.colm.cc/paper_files/paper/2026/hash/133239b0506b84c802a12b0e5a764a17-Abstract-Conference.html) | Continuation after a model-generated wrong answer, testing spontaneous retraction and internal truthfulness belief | Explains error admission without a user-supplied conversational challenge | Spontaneous self-retraction differs from acknowledging feedback or apologizing for errors |
+| [Baek et al., ICML 2026: Sycophancy Towards Researchers](https://proceedings.mlr.press/v306/baek26d.html) | Evaluation-awareness cues and sycophancy-inducing tuning | Alternative causal hypothesis for evaluation-sensitive behaviors | Researcher-facing performance is not an ordinary user's correct-to-wrong answer flip |
+
+The [CVPR publisher-PDF evidence notes](additional-verified-papers.md) document the visual-conflict experimental designs. **Do not pool their accuracy denominators with dialogue answer-flip rates.**
+
 ## Three contribution claims supported by this synthesis
 
 **Claim 1, taxonomy:** Surface-level response acts and epistemic change must be coded separately. Alnasser and Shaikh address distinct aspects of that claim. **Do not collapse apology and acknowledgment into sycophancy frequency.**
