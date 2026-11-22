@@ -76,6 +76,8 @@
 
 - [Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs](https://aclanthology.org/2026.emnlp-main.2533/) (EMNLP 2026; E) — Causally distinguishes praise, genuine agreement and sycophantic agreement. Extract: Representation separation and intervention.
 
+**Full-text method checks:** Four NeurIPS main-conference papers have a separate [publisher-PDF-grounded extraction](../research/NeurIPS-full-text-evidence.md); the rest of this candidate map remains abstract-level until similarly extracted.
+
 ## Five new, source-verified studies and critical boundaries
 
 ### Estornell & Liu (NeurIPS 2024): majority is not evidence
