@@ -1,3 +1,13 @@
+# Survey evidence and PRISMA audit — current authoritative navigation
+
+The **primary paper reading guide is now [the evidence-led 34-candidate Markdown map](../literature/prisma-core-papers.md)**. This supersedes the older 31-row shortlist as a *curation view*, not as a completed systematic-review inclusion list.
+
+The new [PRISMA 2020 compliance audit](../research/PRISMA-2020-audit.md), [PRISMA-S search provenance](../research/PRISMA-search-provenance.md), and [cross-paper synthesis](../research/evidence-synthesis.md) distinguish verifiable publisher metadata, observed search counts, and unmeasured full-text eligibility. **Do not report 34 as the number of PRISMA-included studies, and do not add 34 to the historical 69-paper general reading list.**
+
+The previous manifest [core-conference-manifest.csv](core-conference-manifest.csv) and its PDF downloader are retained only for historical reproducibility; they still reflect the **previous 31-candidate selection** and do not include the additional NeurIPS/ICML papers. Downloading publisher PDFs does not grant redistribution rights.
+
+---
+
 # Evidence-led conference core (revised for cross-venue coverage)
 
 **Survey:** Agreeing for the Right Reasons: A Survey of Sycophancy, Apology, and Acknowledgement in Language, Vision-Language, and Multi-Agent Models.
