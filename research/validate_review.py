@@ -30,10 +30,10 @@ def main() -> int:
         raise ValueError("Missing candidate section delimiters")
     selection = text.split("## Study catalog by survey question", 1)[1].split("## Five new", 1)[0]
     table_pat = re.compile(
-        r"^\\| \\[([^]]+)\\]\\((https?://[^)]+)\\) \\(([^)]+)\\) \\| (E|S) \\|",
+        r"^\| \[([^]]+)\]\((https?://[^)]+)\) \(([^)]+)\) \| (E|S) \|",
         re.M,
     )
-    bullets_pat = re.compile(r"^- \\[([^]]+)\\]\\((https?://[^)]+)\\) \\(([^)]+)\\) — ", re.M)
+    bullets_pat = re.compile(r"^- \[([^]]+)\]\((https?://[^)]+)\) \(([^)]+)\) — ", re.M)
     items = [
         {"title": title, "url": url, "label": label, "tier": tier}
         for title, url, label, tier in table_pat.findall(selection)
@@ -41,14 +41,14 @@ def main() -> int:
         {"title": title, "url": url, "label": label, "tier": "E/S stated in bullet"}
         for title, url, label in bullets_pat.findall(selection)
     ]
-    match = re.search(r"\\*\\*(\\d+) unique candidate records\\*\\*", text)
+    match = re.search(r"\*\*(\d+) unique candidate records\*\*", text)
     if not match:
         issues.append("Missing explicit candidate count")
     elif int(match.group(1)) != len(items):
         issues.append(f"Declared count {match.group(1)} != parsed {len(items)}")
     if len({x["url"] for x in items}) != len(items):
         issues.append("Duplicate official publication link")
-    if len({re.sub(r"\\W+", "", x["title"].lower()) for x in items}) != len(items):
+    if len({re.sub(r"\W+", "", x["title"].lower()) for x in items}) != len(items):
         issues.append("Duplicate normalized titles")
 
     venue_counts = collections.Counter()
@@ -56,7 +56,7 @@ def main() -> int:
         parsed = urlparse(item["url"])
         if parsed.hostname not in HOSTS:
             issues.append(f"Unapproved publication host for {item['title']}: {parsed.hostname}")
-        venue = re.match(r"(ICLR|ICML|NeurIPS|CHI|ACL|EMNLP|NAACL) (20\\d{2})", item["label"])
+        venue = re.match(r"(ICLR|ICML|NeurIPS|CHI|ACL|EMNLP|NAACL) (20\d{2})", item["label"])
         if not venue or venue.group(1) not in VENUES:
             issues.append(f"Unparseable venue for {item['title']}: {item['label']}")
             continue
@@ -68,7 +68,7 @@ def main() -> int:
         issues.append("Candidate metadata must not imply completed PRISMA sample")
 
     # Enforce *internal* section counts, not a fixed preferred publication quota.
-    section_pat = re.compile(r"^### (.+?) \\((\\d+) candidates\\)\\n(.*?)(?=^### |\\Z)", re.M | re.S)
+    section_pat = re.compile(r"^### (.+?) \((\d+) candidates\)\n(.*?)(?=^### |\Z)", re.M | re.S)
     for heading, expected, block in section_pat.findall(selection):
         actual = len(table_pat.findall(block))
         if actual != int(expected):
