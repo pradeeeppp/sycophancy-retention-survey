@@ -23,4 +23,6 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check reference uniqueness, venue labels, and screening claims
-        run: python research/validate_review.py
+        run: |
+          python research/validate_review.py
+          python research/reproduce-screening-counts.py --check
