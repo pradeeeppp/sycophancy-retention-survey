@@ -35,6 +35,14 @@ RQ5. Which experiments have interpretable causal comparators, grounded outcomes,
 
 **Risk-of-bias and study quality (planned, not scored):** use six 0–2 rubric elements: construct match, independent pressure/evidence manipulation, outcome-ground-truth validity, baseline controls, evaluation transparency, and reproducibility. Record who scored each and disagreement resolution. Distinguish *internal validity* from *relevance tier*. Do not claim GRADE certainty without applying a suitable formal framework.
 
+## 3a. Newly executed record-level bounded screening (21 November 2026)
+
+The research audit now includes an **actually reconciled set of 219 catalog occurrences across six *overlapping inventory sources***, deduplicated to **89 unique records**. A single assistant applied a transparent *preliminary publication/title/construct filter*, advancing **55 papers** (54 main-track and one explicitly separate archival NeurIPS Datasets & Benchmarks study) and excluding **34** with per-record reasons. Six advanced papers have publisher-PDF method notes; 49 do not. The exact machine-readable source sightings, screening decisions and reasons are preserved and executable count checks are supplied.
+
+**This is NOT 219 independently retrieved bibliographic database records, and the 55 are NOT finally included studies.** It is a bounded reconciliation of an already curated repository and three additional official-publisher discoveries. That partial, observed flow is documented with its own diagram and 89-row audit trail: [Executed bounded screening](PRISMA-bounded-executed-screen.md) · [JSONL source record ledger](repository-screening-snapshot-2026-11-21.jsonl) · [reproduction script](reproduce-screening-counts.py) · [additional high-fit papers including CVPR](additional-verified-papers.md).
+
+Full cross-venue database identification, all-record title+abstract verification, independent full-text eligibility, risk-of-bias appraisal and a **combined PRISMA 2020 study-inclusion diagram remain unverified**. This separation is essential for honest reporting.
+
 ## 4. PRISMA 2020 flow — what can actually be reported
 
 **A. Historical, bounded ACL title search**, from [existing recorded research](survey-search.md):
@@ -79,7 +87,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 5 Eligibility criteria | Reported | Section 2; strict main-track boundary |
 | 6 Information sources | Partial | Search provenance lists observed publisher sources; complete database exports absent |
 | 7 Search strategy | Partial | Exact prior ACL regex and executed targeted queries exist; no full database-specific search strings |
-| 8 Selection process | Partial | Earlier single-assistant title screen; no cross-venue full screening / adjudication |
+| 8 Selection process | Partial | Earlier single-assistant title screen; a completed 89-record **metadata** triage but no exhaustive database screening / independent adjudication |
 | 9 Data collection process | Not done | Targeted PDF extraction completed for four NeurIPS main-track papers; not all 34 |
 | 10 Data items | Reported as definitions | Variables listed in section 3; no completed extraction |
 | 11 Study risk-of-bias assessment | Not done | Rubric specified but not administered |
@@ -87,7 +95,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 13a–f Synthesis methods | Partial | Narrative grouping and non-pooling rules; no formal study-level synthesis |
 | 14 Reporting-bias methods | Not done | No assessment of missing results |
 | 15 Certainty-assessment methods | Not done | No formal certainty framework applied |
-| 16a Study-selection results | Partial | Historical bounded ACL counts; no combined PRISMA counts |
+| 16a Study-selection results | Partial | Historical bounded ACL metadata counts plus **measured 219-to-89 repository inventory reconciliation**, **34 metadata exclusions** and **55 provisional full-text candidates**; not a combined PRISMA flow |
 | 16b Excluded-study citations | Partial | Representative explicit exclusion decisions in [core](../literature/prisma-core-papers.md) |
 | 17 Study characteristics | Partial | Publisher-linked abstract-level descriptions; models, samples and designs not all extracted |
 | 18 Risk of bias in studies | Not done | No full-text appraisals |
@@ -122,6 +130,6 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 
 ## 8. Readiness decision
 
-**This is not a completed PRISMA review.** The repository now has documented objectives, criteria, an improved cross-venue publisher-linked candidate set, actual search provenance, a traceable partial ACL subflow, and an itemized compliance audit. The still-unobserved search, duplicate, full-text and appraisal results cannot responsibly be marked "complete" without performing and documenting them.
+**This is not a completed PRISMA review.** The repository now has documented objectives and criteria, an improved cross-venue candidate set, source provenance, a **fully enumerated 89-record *bounded repository* metadata decision ledger**, six targeted publisher-PDF method checks, a traceable historical ACL subflow, and an itemized compliance audit. The still-unobserved search, duplicate, full-text and appraisal results cannot responsibly be marked "complete" without performing and documenting them.
 
 **Review status:** Keep the GitHub changes as a **draft PR**, not a claimed PRISMA-compliant manuscript submission. The audit itself has no unspecified placeholder numbers: every unavailable value is explicitly *not established*.
