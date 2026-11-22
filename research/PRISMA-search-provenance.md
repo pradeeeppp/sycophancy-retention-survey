@@ -124,6 +124,10 @@ site:proceedings.mlr.press/v306/ "sycophancy" "researchers" "misalignment"
 
 Neither these search-engine queries nor the inventory counts are an exhaustive conference proceedings export. **Web search engine results are not a stable database denominator**; no such numerator/denominator is claimed.
 
+## Explicit later negative search hit (not counted in frozen 89)
+
+The targeted query involving *contextual pressure* also surfaced [**ConPress: Learning Efficient Reasoning from Multi-Question Contextual Pressure** (ICML 2026)](https://proceedings.mlr.press/v306/deng26m.html). The official PMLR abstract confirms that "pressure" means fitting **multiple independent questions into one prompt** to shorten reasoning traces. There is **no interlocutor challenge, apology, acknowledgement, or evidence-vs-social-influence outcome**. It is therefore **excluded for construct mismatch**. This negative discovery was checked **after** the six-inventory repository snapshot and does **not** change the frozen 219/89/34/55 counts; it illustrates why keyword matches alone cannot determine inclusion. Search-engine results were not exported as a complete query result set.
+
 ## Reporting standards
 
 PRISMA 2020: https://www.prisma-statement.org/prisma-2020  
