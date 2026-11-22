@@ -4,6 +4,8 @@
 
 **Research snapshot:** 2026-11-21. **Status:** publisher-linked **candidate** set; title/abstract relevance assessments and historical catalog metadata. **NOT** an exhaustive database-derived inclusion sample, second-reviewer consensus, full-text critical appraisal, or complete PRISMA flow. This resource is designed for substantive reading and discussion, not to inflate a final paper count.
 
+> **Updated systematic-screening status:** This file preserves the original **34 annotated candidate records**. A later [six-inventory reconciliation](../research/PRISMA-bounded-executed-screen.md) screened **89 distinct repository-derived records**, advanced **55** (including these 34) for full-text checking, and gives [substantive notes for the other 21](../research/additional-verified-papers.md), including two **CVPR 2025 main-conference** visual-evidence papers. These are **not** final PRISMA-included studies.
+
 ## Decision and methodology
 
 - **34 unique candidate records**: 29 retained from an earlier 31-record shortlist plus 5 additional, official-proceedings-verified conference studies. Two older candidates were moved to *background* because their connection to pressure-responsive conversational behavior is indirect.
