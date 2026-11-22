@@ -42,6 +42,10 @@ Avoid treating `no flip` alone as success. A good system **resists invalid press
 | [Invisible Saboteurs, CHI 2026](https://doi.org/10.1145/3772318.3791365) | User-facing sycophantic AI advice | Novice problem-solving performance | Human mislearning/over-reliance | Human consequences do not directly measure long-term retention |
 | [Interaction Context Often Increases Sycophancy, CHI 2026](https://doi.org/10.1145/3772318.3791915) | Personalization and conversation context | Context-present versus context-absent | User-directed agreement behavior | Do not overgeneralize from studied users/models |
 
+## Source-checked methodological validity
+
+A [six-paper construct-validity and methodological appraisal](methodological-appraisal-six-papers.md) documents precisely which experiments isolate pressure, contradictory evidence, argument accuracy or baseline error. This prevents invalid cross-paper pooling of majority-vote accuracy, VLM modality preference, and actual conversational stance flips.
+
 ## Newly source-checked multimodal and acknowledgement comparators
 
 | Paper | Primary evidence manipulation | What it establishes | Caution for this survey |
