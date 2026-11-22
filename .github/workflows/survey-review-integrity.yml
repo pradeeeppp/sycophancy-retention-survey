@@ -1,0 +1,28 @@
+name: Survey citation and PRISMA-claim integrity
+on:
+  pull_request:
+    paths:
+      - 'literature/**'
+      - 'research/**'
+      - '.github/workflows/survey-review-integrity.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'literature/**'
+      - 'research/**'
+      - '.github/workflows/survey-review-integrity.yml'
+permissions:
+  contents: read
+jobs:
+  validate-review-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check reference uniqueness, venue labels, and screening claims
+        run: |
+          python research/validate_review.py
+          python research/reproduce-screening-counts.py --check

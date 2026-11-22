@@ -2,9 +2,11 @@
 
 When a user or another agent challenges a model, what distinguishes an evidence-based update from unwarranted agreement? The collection covers responses to disagreement, dialogue repair, visual grounding and peer influence.
 
+**New executed screening evidence (review branch):** [89 distinct records, 34 documented metadata exclusions, and 55 candidate full-text reports](research/PRISMA-bounded-executed-screen.md) · [Reproducible JSONL selection ledger](research/repository-screening-snapshot-2026-11-21.jsonl) · [Additional high-fit CVPR/ICML/COLM studies](research/additional-verified-papers.md) · [Six-paper methodological appraisal](research/methodological-appraisal-six-papers.md) · [PRISMA 2020 audit](research/PRISMA-2020-audit.md). **This is a bounded catalog reconciliation, not a completed database-wide systematic review.**
+
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Cross-venue, archival-conference curation (15 ACL-family / 16 other):** [31-paper conference shortlist](papers/CORE-CONFERENCE-README.md) · [CSV with official proceedings and PDF URLs](papers/core-conference-manifest.csv) · [PRISMA-style screening protocol](research/main-conference-prisma-protocol.md) · [Cross-venue source and exclusion log](research/cross-venue-discovery-log.md) · [Full-text screening template](research/full-text-screening-template.csv). This is a provisional, topic-fit shortlist, **not** a completed multi-database PRISMA flow; publisher-hosted PDF links are not repository-stored PDF files.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
 
 [![Studies: 69](https://img.shields.io/badge/Studies-69-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
