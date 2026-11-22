@@ -84,6 +84,10 @@ Model context: ("large language model" OR LLM OR VLM OR MLLM OR "vision-language
 
 When using database APIs, adapt syntax per API. Do **not** require the term `sycophancy` to be in the title: NeurIPS debate studies demonstrate why broader concepts matter. Freeze a dated list of source IDs and store a retrieved-record ledger before claiming exhaustive coverage. 
 
+## Record-level publication validation
+
+A [34-record title/venue verification ledger](publisher-verification-ledger.md) distinguishes directly accessible publisher landing pages, separately corroborated CHI bibliographic records, and four targeted NeurIPS PDF method checks. This only validates the current candidate set and is **not a complete proceedings-level export**.
+
 ## Reporting standards
 
 PRISMA 2020: https://www.prisma-statement.org/prisma-2020  
