@@ -29,7 +29,7 @@ RQ5. Which experiments have interpretable causal comparators, grounded outcomes,
 
 **Title/abstract screening:** screen all identified records, recording reviewer identity, date, inclusion/exclusion and primary reason; borderline papers continue to full text. This repository currently shows an earlier single-assistant, ACL-only title screening and a later targeted publisher shortlist. It has **not** established comprehensive cross-venue screening.
 
-**Full-text screening:** verify methods, outcomes, applicable track, versions, correctness labels and comparator. Record sought, retrieved, not retrievable, excluded with reason, and final included studies; those records are currently absent. **No full-text inclusion decision can be asserted for the 34 reading candidates.**
+**Full-text screening:** verify methods, outcomes, applicable track, versions, correctness labels and comparator. Record sought, retrieved, not retrievable, excluded with reason, and final included studies; those records are currently absent. **No final full-text inclusion decision can be asserted for the entire 34-candidate collection.** A [targeted publisher-PDF extraction for four NeurIPS main-track studies](NeurIPS-full-text-evidence.md) now documents source methods, outcome types, and critical limits. It is single-reviewer and does not retroactively supply database-wide full-text screening or adjudication.
 
 **Data extraction:** independently record original answer and its ground truth, challenge type/validity and supporting evidence, final answer and its truth value, agreement/acknowledgement/apology acts, confidence, user/peer identity, visual grounding, debate protocol, model/sampling/prompt, sample size, baselines, effect estimates and uncertainty, human outcome and study limitations.
 
@@ -80,7 +80,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 6 Information sources | Partial | Search provenance lists observed publisher sources; complete database exports absent |
 | 7 Search strategy | Partial | Exact prior ACL regex and executed targeted queries exist; no full database-specific search strings |
 | 8 Selection process | Partial | Earlier single-assistant title screen; no cross-venue full screening / adjudication |
-| 9 Data collection process | Not done | No audited full-text extraction protocol applied |
+| 9 Data collection process | Not done | Targeted PDF extraction completed for four NeurIPS main-track papers; not all 34 |
 | 10 Data items | Reported as definitions | Variables listed in section 3; no completed extraction |
 | 11 Study risk-of-bias assessment | Not done | Rubric specified but not administered |
 | 12 Effect measures | Partial | Proposed flip rates and human outcomes; paper-specific estimates absent |
@@ -92,7 +92,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 17 Study characteristics | Partial | Publisher-linked abstract-level descriptions; models, samples and designs not all extracted |
 | 18 Risk of bias in studies | Not done | No full-text appraisals |
 | 19 Individual study results | Partial | Narrative publisher abstract summaries; no systematic effect estimates/CI |
-| 20a–d Synthesis results | Not done | No complete included sample and no effect-level comparison |
+| 20a–d Synthesis results | Not done | Four source-checked NeurIPS full-text method/outcome comparisons; no complete included sample or harmonized effect-size synthesis |
 | 21 Reporting-bias assessments | Not done | Unavailable |
 | 22 Certainty of evidence | Not done | Unavailable |
 | 23a–d Discussion | Partial | Tradeoffs, limitations and implications in [synthesis](evidence-synthesis.md) |
@@ -110,7 +110,13 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 - **Human trust ≠ long-run retention.** Do not generalize immediate experimental preference to continued use.
 - **Mixed evidence types:** publish narrative synthesis with clear separate columns for direct behavior, theory, interventions and human evaluations rather than pool effects without compatible denominators.
 
-## 7. Readiness decision
+## 7. Progress audited in this PR
+
+- [Source-checked PDF methods and outcomes for four NeurIPS main-track studies](NeurIPS-full-text-evidence.md) are now recorded, with critical comparability limits.
+- [Automated bibliography-integrity validator](validate_review.py) checks candidate count, DOI/proceedings domains, unique publication links, section totals and explicit noncompletion language. Validation does **not** establish scientific completeness.
+- These are real advances within the documented candidate set, not grounds for certifying missing independent screening, venue-wide exports, or systematic risk-of-bias.
+
+## 8. Readiness decision
 
 **This is not a completed PRISMA review.** The repository now has documented objectives, criteria, an improved cross-venue publisher-linked candidate set, actual search provenance, a traceable partial ACL subflow, and an itemized compliance audit. The still-unobserved search, duplicate, full-text and appraisal results cannot responsibly be marked "complete" without performing and documenting them.
 
