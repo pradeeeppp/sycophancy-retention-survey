@@ -1,5 +1,7 @@
 # Evidence-sensitive synthesis: comparisons, confounds and tradeoffs
 
+**Additional publisher-PDF evidence:** [Four source-checked NeurIPS main-track studies with detailed methods, conditions and limitations](NeurIPS-full-text-evidence.md). These should be used instead of any overgeneralized title-only accounts.
+
 **Interpretive status:** narrative synthesis of published **publisher abstracts and recorded study summaries**, not a systematic extraction of every full-text result. Match study designs before making quantitative comparison.
 
 ## Core comparative logic
