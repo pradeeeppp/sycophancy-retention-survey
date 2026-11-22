@@ -104,6 +104,26 @@ Search queries actually used in this verification, in addition to visiting all 3
 
 **Search type:** targeted title/venue/source corroboration, **not** a comprehensive database search. Search ranking and result totals were not captured as reproducible publication exports, so none are entered in the manuscript PRISMA identification stage. The two CHI records have independently corroborated bibliographic provenance; this is not a claim that their publisher PDFs were retrieved.
 
+## Completed six-inventory reconciliation (distinct from systematic database retrieval)
+
+The latest [executed screening and flow](PRISMA-bounded-executed-screen.md) contains **219 catalog sightings and 89 unique titles after 130 repeated sightings were removed**, with **34 explicitly excluded at preliminary screening and 55 sent for full-text assessment**. It combines the 52-study original inventory, 30 historical screening records (29 ACL regex title matches plus one purposive ICLR entry), 31 prior strict-core records, 69 general README records, 34 annotated core records, and three **new** publisher discoveries.
+
+The three targeted publisher records were located using the following executed searches, then checked against official proceedings (all three had **zero previous matching occurrences** in the local five inventory files):
+
+```text
+site:openaccess.thecvf.com/content/CVPR2025 "sycophancy" "vision" "text"
+site:openaccess.thecvf.com/content/CVPR2025 "vision" "language" "conflicting" "text" "visual"
+site:openaccess.thecvf.com/content/CVPR2025 "misleading" "visual" language
+"Words or Vision: Do Vision-Language Models Have Blind Faith in Text?" CVPR2025 abstract
+"Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly" CVPR2025
+site:proceedings.mlr.press/v306/ "sycophancy" "researchers" "misalignment"
+"Sycophancy Towards Researchers Drives Performative Misalignment" PMLR 306
+```
+
+**Source URLs:** [Deng et al. CVPR 2025](https://openaccess.thecvf.com/content/CVPR2025/html/Deng_Words_or_Vision_Do_Vision-Language_Models_Have_Blind_Faith_in_CVPR_2025_paper.html), [Liu et al. CVPR 2025 publisher PDF](https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_Unveiling_the_Ignorance_of_MLLMs_Seeing_Clearly_Answering_Incorrectly_CVPR_2025_paper.pdf), [Baek et al. ICML 2026](https://proceedings.mlr.press/v306/baek26d.html).
+
+Neither these search-engine queries nor the inventory counts are an exhaustive conference proceedings export. **Web search engine results are not a stable database denominator**; no such numerator/denominator is claimed.
+
 ## Reporting standards
 
 PRISMA 2020: https://www.prisma-statement.org/prisma-2020  
