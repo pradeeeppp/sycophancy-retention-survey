@@ -88,6 +88,22 @@ When using database APIs, adapt syntax per API. Do **not** require the term `syc
 
 A [34-record title/venue verification ledger](publisher-verification-ledger.md) distinguishes directly accessible publisher landing pages, separately corroborated CHI bibliographic records, and four targeted NeurIPS PDF method checks. This only validates the current candidate set and is **not a complete proceedings-level export**.
 
+## Additional source-verification pass (21 November 2026)
+
+After building the 34-record evidence map, the reviewer opened each recorded publisher/DOI landing URL to validate its existence, publication title and track, not to count unidentified records. **32 publisher landing pages returned directly accessible metadata.** Two CHI DOI pages were inaccessible; CHI publication details were corroborated via targeted bibliographic searches and indexed CHI/dblp publication pages. See [record-level verification ledger](publisher-verification-ledger.md).
+
+Search queries actually used in this verification, in addition to visiting all 34 recorded URLs:
+
+```text
+"Interaction Context Often Increases Sycophancy in LLMs" CHI 2026 DOI 3772318 3791915
+"Invisible Saboteurs: Sycophantic LLMs Mislead Novices in Problem-Solving Tasks" CHI 2026 DOI
+"Kasprova" "sycophancy" "2026" survey multi agent topologies
+"Harland" "AI apology" 2025 2026 review
+"Pitre" "A Diagnostic Study of Multi-Agent LLMs for Real-World Debates" 2026 2025
+```
+
+**Search type:** targeted title/venue/source corroboration, **not** a comprehensive database search. Search ranking and result totals were not captured as reproducible publication exports, so none are entered in the manuscript PRISMA identification stage. The two CHI records have independently corroborated bibliographic provenance; this is not a claim that their publisher PDFs were retrieved.
+
 ## Reporting standards
 
 PRISMA 2020: https://www.prisma-statement.org/prisma-2020  
