@@ -64,7 +64,10 @@ def main() -> int:
 
     if "Not established" not in audit and "**Not established**" not in audit:
         issues.append("PRISMA audit no longer explicitly identifies unobserved counts")
-    if "NOT an exhaustive database-derived inclusion sample" not in text:
+    if not any(phrase in text for phrase in (
+        "NOT an exhaustive database-derived inclusion sample",
+        "**NOT** an exhaustive database-derived inclusion sample",
+    )):
         issues.append("Candidate metadata must not imply completed PRISMA sample")
 
     # Enforce *internal* section counts, not a fixed preferred publication quota.
