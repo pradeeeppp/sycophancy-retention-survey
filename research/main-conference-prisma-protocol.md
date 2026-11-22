@@ -8,6 +8,12 @@
 
 **Updated evidence ledger:** [34 publisher-linked candidates](../literature/prisma-core-papers.md), [PRISMA 2020 completeness audit](PRISMA-2020-audit.md), [source-provenance and executed search strings](PRISMA-search-provenance.md). The historical 31-paper CSV is superseded as a reading shortlist and is **not** the final systematic-review selection. No comprehensive search denominator, full-text eligibility decision or independent reviewer consensus has been established. This is a protocol and documented audit, not a completed PRISMA review.
 
+## Retrospective amendment and actual screening
+
+**21 November 2026 correction:** AACL main and COLM main are explicitly eligible because the previously curated literature already contained a high-relevance AACL main advice study and a main COLM 2026 error-retraction study. This is a *post-hoc protocol amendment*, recorded in Git history, **not a preregistered filter**. No preprints, workshops or ACL Findings are quietly relabeled as main-track evidence. When studying important peer-reviewed Findings or specialist-conference papers, retain them as clearly identified contextual evidence instead of representing them as main proceedings.
+
+Actual preliminary screening has now been performed on a **bounded union of the repository's known inventories**: [219 source-occurrences → 89 distinct title records → 34 metadata exclusions / 55 full-text candidates](PRISMA-bounded-executed-screen.md). Each record's sources, decision and reason are archived in [JSONL](repository-screening-snapshot-2026-11-21.jsonl). This was **one assistant screening** on metadata and existing summaries; it does not substitute for a complete per-database title+abstract export or full-text independent screening. The combined manuscript PRISMA flow still has missing denominators; do not fill them with bounded-corpus counts.
+
 ## Research questions
 
 * RQ1: Under what conditions do models agree, resist, apologize, acknowledge, ask for clarification, or revise an earlier stance?
@@ -18,7 +24,7 @@
 
 ## Search coverage and vocabulary
 
-For the **future complete systematic review**, search *titles and abstracts* in ACL Anthology (ACL, EMNLP, NAACL, EACL; main proceedings), OpenReview/ICLR official accepted conference proceedings, PMLR/ICML, NeurIPS proceedings, CVF Open Access (CVPR, ICCV), ECCV/Springer, and ACM DL (CHI). Record each database, search date, exact query, filter and export file. Citation chasing is a separately labeled route. Run searches over 2022–2026; extend backwards for important foundational dialogue/grounding work. Do not restrict study designs based on positive results.
+For the **future complete systematic review**, search *titles and abstracts* in ACL Anthology (ACL, EMNLP, NAACL, EACL, AACL; main proceedings), OpenReview/ICLR official accepted conference proceedings, PMLR/ICML, NeurIPS proceedings, CVF Open Access (CVPR, ICCV), ECCV/Springer, COLM official proceedings, and ACM DL (CHI). Record each database, search date, exact query, filter and export file. Citation chasing is a separately labeled route. Run searches over 2022–2026; extend backwards for important foundational dialogue/grounding work. Do not restrict study designs based on positive results.
 
 Use this broad, adapt-to-database Boolean query, then narrower combinations where search interfaces limit syntax:
 
@@ -37,7 +43,7 @@ For multimodal searches add `("visual evidence" OR "misleading hint" OR "image-t
 
 ## Inclusion and exclusion rules
 
-**Core candidate eligible:** final, officially published main-conference research paper in ACL, EMNLP, NAACL, EACL, ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV or CHI, plus peer-reviewed archival NeurIPS Datasets and Benchmarks papers explicitly labeled as such; empirical intervention, benchmark, user study or model-behavior study; directly measures agreement, opposition, evidence-sensitive revision, apology, feedback acknowledgement, social conformity, or debate agreement, with an observable outcome. Peer review and main-track status must be confirmed by the publisher.
+**Core candidate eligible:** final, officially published main-conference research paper in ACL, EMNLP, NAACL, EACL, AACL, ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, COLM or CHI, plus peer-reviewed archival NeurIPS Datasets and Benchmarks papers explicitly labeled as such; empirical intervention, benchmark, user study or model-behavior study; directly measures agreement, opposition, evidence-sensitive revision, apology, feedback acknowledgement, social conformity, or debate agreement, with an observable outcome. Peer review and main-track status must be confirmed by the publisher.
 
 **Exclude from strict core:** arXiv-only/preprints, under-review or withdrawn manuscripts, Findings tracks, workshops, student research workshops, non-archival satellite tracks, journals, surveys, position/opinion pieces without primary empirical or theoretical contributions, duplicates, and papers mentioning sycophancy only tangentially. Archival NeurIPS Datasets and Benchmarks is separately identified, not a workshop. Retain useful excluded papers in the existing 69-study *background* collection without counting them as core.
 
