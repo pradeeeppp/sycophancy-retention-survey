@@ -1,5 +1,7 @@
 # Record-level publisher and conference-track verification
 
+**Historical-snapshot disclaimer:** This document verifies the **initial 34 candidate papers**, not all [55 provisional full-text candidates in the newer executed repository screen](PRISMA-bounded-executed-screen.md). See [21 additions and restored entries](additional-verified-papers.md). Two CVPR main papers and one ICML main paper are **new publisher-verified discoveries** outside this older 34-record verification ledger.
+
 **Audit date:** 2026-11-21 (America/Los_Angeles). **Reviewer:** single assistant using publicly accessible official proceeding records and cross-checks; no separate human verification. **Corpus:** the **34 *already-curated* candidate records** in [the paper map](../literature/prisma-core-papers.md), not an exhaustive output from a multi-database search.
 
 ## Findings
