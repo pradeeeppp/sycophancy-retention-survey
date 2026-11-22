@@ -4,7 +4,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
 
 [![Studies: 69](https://img.shields.io/badge/Studies-69-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
