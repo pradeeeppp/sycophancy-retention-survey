@@ -1,3 +1,5 @@
+**Updated research note (21 Nov 2026):** The [current 34-paper cross-venue evidence map](../literature/prisma-core-papers.md) and [PRISMA audit](../research/PRISMA-2020-audit.md) are the recommended reading and methodology entry points. This page is a preserved older priority comparison, not the final included-study set.
+
 # Priority papers for the survey
 
 | Survey question | Papers to compare | What to extract |
