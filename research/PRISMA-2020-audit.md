@@ -90,7 +90,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 8 Selection process | Partial | Earlier single-assistant title screen; a completed 89-record **metadata** triage but no exhaustive database screening / independent adjudication |
 | 9 Data collection process | Not done | Targeted PDF extraction completed for four NeurIPS main-track papers; not all 34 |
 | 10 Data items | Reported as definitions | Variables listed in section 3; no completed extraction |
-| 11 Study risk-of-bias assessment | Not done | Rubric specified but not administered |
+| 11 Study risk-of-bias assessment | Partial | [Single-reviewer design and construct-validity appraisal of six inspected publisher papers](methodological-appraisal-six-papers.md); no full 55-report risk-of-bias assessment |
 | 12 Effect measures | Partial | Proposed flip rates and human outcomes; paper-specific estimates absent |
 | 13a–f Synthesis methods | Partial | Narrative grouping and non-pooling rules; no formal study-level synthesis |
 | 14 Reporting-bias methods | Not done | No assessment of missing results |
@@ -98,7 +98,7 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 | 16a Study-selection results | Partial | Historical bounded ACL metadata counts plus **measured 219-to-89 repository inventory reconciliation**, **34 metadata exclusions** and **55 provisional full-text candidates**; not a combined PRISMA flow |
 | 16b Excluded-study citations | Partial | Representative explicit exclusion decisions in [core](../literature/prisma-core-papers.md) |
 | 17 Study characteristics | Partial | Publisher-linked abstract-level descriptions; models, samples and designs not all extracted |
-| 18 Risk of bias in studies | Not done | No full-text appraisals |
+| 18 Risk of bias in studies | Partial | Six source-inspected studies have documented methodological caveats; no complete risk-of-bias judgments for all candidate reports |
 | 19 Individual study results | Partial | Narrative publisher abstract summaries; no systematic effect estimates/CI |
 | 20a–d Synthesis results | Not done | Four source-checked NeurIPS full-text method/outcome comparisons; no complete included sample or harmonized effect-size synthesis |
 | 21 Reporting-bias assessments | Not done | Unavailable |
@@ -119,6 +119,8 @@ This is a reproducible *partial search subflow*, **not** a study-level PRISMA 20
 - **Mixed evidence types:** publish narrative synthesis with clear separate columns for direct behavior, theory, interventions and human evaluations rather than pool effects without compatible denominators.
 
 ## 7. Progress audited in this PR
+
+- [Methodological appraisal of six publisher-PDF-checked studies](methodological-appraisal-six-papers.md) documents comparators, evidence-vs-pressure construct validity, and concrete bias/confounding limitations. This is **single-reviewer preliminary appraisal**, not the full 55-paper methodological assessment.
 
 - [Introduction citation audit](introduction-citation-audit.md) verifies the provided excerpt's author/year/venue claims, including **Pitre et al. 2026** (publisher date) and the **under-review** status of Kasprova's survey. The LaTeX manuscript is not in this repository, so the bibliography itself was not edited.
 
