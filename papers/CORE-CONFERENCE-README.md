@@ -10,6 +10,8 @@ The previous manifest [core-conference-manifest.csv](core-conference-manifest.cs
 
 # Evidence-led conference core (revised for cross-venue coverage)
 
+**Latest executed audit (supersedes the earlier 34-paper shortlisting view):** [89 unique known records screened at metadata level, 34 excluded with reasons, 55 advanced to full-text queue](../research/PRISMA-bounded-executed-screen.md) · [21 additional published papers, including CVPR and COLM](../research/additional-verified-papers.md). **These are measured *repository-bounded* screening results, not a complete systematic PRISMA flow.**
+
 **Survey:** Agreeing for the Right Reasons: A Survey of Sycophancy, Apology, and Acknowledgement in Language, Vision-Language, and Multi-Agent Models.
 
 **Status: 31 publisher-confirmed, abstract-screened candidates; NOT 31 PRISMA-included papers.** Read the paper-by-paper [manifest](core-conference-manifest.csv). Evidence extraction and full-text screening are still required.
