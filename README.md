@@ -6,9 +6,9 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 71-study collection remain as separate archival inventories.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 72-study collection remain as separate archival inventories.
 
-[![Studies: 71](https://img.shields.io/badge/Studies-71-334155)](#contents)
+[![Studies: 72](https://img.shields.io/badge/Studies-72-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
 [![Study notes](https://img.shields.io/badge/Read-Study_notes-2563eb)](literature/selected-papers.md)
 
@@ -27,7 +27,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
-- [Related surveys and background](#related-surveys-and-background) (3)
+- [Related surveys and background](#related-surveys-and-background) (4)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 - [Contributing](#contributing)
 - [License](#license)
@@ -44,7 +44,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **71 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **72 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 Only studies with a journal, conference, or workshop publication record are included. Preprint-only entries are excluded; conference papers hosted in official pre-proceedings are retained with that status stated in the study notes.
 
@@ -185,6 +185,7 @@ Adjacent literature on model correction that informs the survey but is not direc
 - [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/) *(2024)* — Reviews when self-correction works, emphasizing reliable feedback and fair comparisons.
 
 - [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8) *(2025)* — Synthesizes AI-apology research, including twelve apology components and a context-sensitive framework; foundational background rather than evidence of model-level sycophancy.
+- [Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts](https://proceedings.iclr.cc/paper_files/paper/2024/hash/99261adc8a6356b38bcf999bba9a26dc-Abstract-Conference.html) *(2024)* — Tests how models weigh their trained beliefs against contradicting documents with no user or social pressure; a baseline for evidence-driven updating.
 
 [Study notes](literature/selected-papers.md#related-surveys-and-background) · [Back to contents](#contents)
 

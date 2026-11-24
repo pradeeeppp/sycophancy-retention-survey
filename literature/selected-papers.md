@@ -4,7 +4,7 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries for the published studies retained under the reading list's inclusion policy.
 
-This index classifies 71 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 72 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
@@ -15,7 +15,7 @@ This index classifies 71 selected studies by their primary research focus. Some 
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
-- [Related surveys and background](#related-surveys-and-background) (3)
+- [Related surveys and background](#related-surveys-and-background) (4)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 
 ## Behavioral definitions and social sycophancy
@@ -343,6 +343,12 @@ This critical survey reviews when inference-time self-correction succeeds or fai
 **Harland, H., Dazeley, R., Senaratne, H., Vamplew, P., Cruz, F., & Nakisa, B. (2025).** [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8). *Artificial Intelligence Review*, 58, Article 369.
 
 This critical review synthesizes AI-apology research published in 2020–2023 and organizes it around five elements: outcome, interaction, offence, recipient, and offender. It discusses twelve components and twelve moderators of AI apology. **Scope:** prior conceptual and human–AI interaction work, not an independent experiment testing whether an LLM's apology or error admission is epistemically true. It must be credited when defining apology or asserting novelty; the survey can instead ask whether conversational correction benchmarks verify the factual warrant and behavioral consequences of such speech acts.
+
+**Xie, J., Zhang, K., Chen, J., Lou, R., & Su, Y. (2024).** [Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts](https://proceedings.iclr.cc/paper_files/paper/2024/hash/99261adc8a6356b38bcf999bba9a26dc-Abstract-Conference.html). *International Conference on Learning Representations (ICLR 2024)*.
+
+This paper tests a simple framework: the model's internal belief against external evidence. It asks how a model changes the belief it learned in training when it is shown a document that contradicts it. The evidence is either a single passage arguing for a different answer, or a mix of passages supporting different answers. There is no user and no conversation, so this is evidence without social pressure. The findings are as follows. With a single source, the model mostly switches to the new answer, but only when the passage is fluent; clumsy edited passages are mostly ignored. With mixed sources, the model favors what it already believes, a form of confirmation bias. For well-known facts, the model sticks to its memory much more often. The order of the evidence changes the answer for most models. The model also sides with whichever answer has more passages behind it. Finally, irrelevant passages distract the model, and it filters them worse as more are added.
+
+**Scope:** knowledge-conflict background, not a sycophancy experiment. It is a no-social-pressure baseline for comparing how models update on evidence versus on user pushback.
 
 ## Related visual grounding and hallucination
 

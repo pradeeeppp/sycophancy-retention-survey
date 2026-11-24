@@ -1,4 +1,4 @@
-# Papers in the survey catalog (71)
+# Papers in the survey catalog (72)
 
 Source: literature/selected-papers.md
 
@@ -87,18 +87,19 @@ Source: literature/selected-papers.md
 63. [Talking to a Know-It-All GPT or a Second-Guesser Claude? How Repair reveals distinct Multi-Turn Behavior in LLMs](https://aclanthology.org/2026.acl-long.651/) (2026) — Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 64. [Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation](https://aclanthology.org/2026.acl-long.2046/) (2026) — Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 
-## Related surveys and background (3)
+## Related surveys and background (4)
 
 65. [Tactical Variations in Ingratiation](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Self-presentation_Impression_Formation/Jones_Ingratiation_1964_Ch2_pp25-45.pdf) (1964) — Ingratiation: A Social Psychological Analysis
 66. [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/) (2024) — Transactions of the Association for Computational Linguistics
 67. [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8) (2025) — Artificial Intelligence Review
+68. [Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts](https://proceedings.iclr.cc/paper_files/paper/2024/hash/99261adc8a6356b38bcf999bba9a26dc-Abstract-Conference.html) (2024) — International Conference on Learning Representations (ICLR 2024)
 
 ## Related visual grounding and hallucination (4)
 
-68. [Mechanisms of Prompt-Induced Hallucination in Vision–Language Models](https://aclanthology.org/2026.acl-long.1941/) (2026) — Proceedings of ACL 2026
-69. [Tone Matters: The Impact of Linguistic Tone on Hallucination in VLMs](https://openaccess.thecvf.com/content/WACV2026W/VALED/html/Hong_Tone_Matters_The_Impact_of_Linguistic_Tone_on_Hallucination_in_WACVW_2026_paper.html) (2026) — Proceedings of the WACV 2026 Workshops
-70. [SPOD: Recovering Suppressed Temporal Evidence in Video-LLMs via Single-Pass Orthogonal Decomposition](https://doi.org/10.1145/3767308.3835492) (2026) — Proceedings of the 34th ACM International Conference on Multimedia (ACM Multimedia 2026)
-71. [PVFH-Bench: Benchmarking Premise-Induced Visual Fixation Hallucinations in Vision-Language Models](https://aclanthology.org/2026.emnlp-main.251/) (2026) — Proceedings of EMNLP 2026
+69. [Mechanisms of Prompt-Induced Hallucination in Vision–Language Models](https://aclanthology.org/2026.acl-long.1941/) (2026) — Proceedings of ACL 2026
+70. [Tone Matters: The Impact of Linguistic Tone on Hallucination in VLMs](https://openaccess.thecvf.com/content/WACV2026W/VALED/html/Hong_Tone_Matters_The_Impact_of_Linguistic_Tone_on_Hallucination_in_WACVW_2026_paper.html) (2026) — Proceedings of the WACV 2026 Workshops
+71. [SPOD: Recovering Suppressed Temporal Evidence in Video-LLMs via Single-Pass Orthogonal Decomposition](https://doi.org/10.1145/3767308.3835492) (2026) — Proceedings of the 34th ACM International Conference on Multimedia (ACM Multimedia 2026)
+72. [PVFH-Bench: Benchmarking Premise-Induced Visual Fixation Hallucinations in Vision-Language Models](https://aclanthology.org/2026.emnlp-main.251/) (2026) — Proceedings of EMNLP 2026
 
 ## Candidates outside the catalog (20)
 
