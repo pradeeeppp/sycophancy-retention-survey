@@ -14,7 +14,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 > How can an assistant stay helpful and supportive while remaining willing to disagree, correct mistakes, and update when the evidence changes?
 
-**New to the topic?** Follow [Start here](#start-here). **Looking for a paper?** Browse the [contents](#contents). **Need more detail?** Read the [full citations and study notes](literature/selected-papers.md), or the [extended notes on selected papers](literature/select-papers_senthil.md).
+**New to the topic?** Follow [Start here](#start-here). **Looking for a paper?** Browse the [contents](#contents). **Need more detail?** Read the [full citations and study notes](literature/selected-papers.md).
 
 ## Contents
 
