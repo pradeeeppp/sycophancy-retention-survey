@@ -6,15 +6,15 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 69-study collection remain as separate archival inventories.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 70-study collection remain as separate archival inventories.
 
-[![Studies: 69](https://img.shields.io/badge/Studies-69-334155)](#contents)
+[![Studies: 70](https://img.shields.io/badge/Studies-70-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
 [![Study notes](https://img.shields.io/badge/Read-Study_notes-2563eb)](literature/selected-papers.md)
 
 > How can an assistant stay helpful and supportive while remaining willing to disagree, correct mistakes, and update when the evidence changes?
 
-**New to the topic?** Follow [Start here](#start-here). **Looking for a paper?** Browse the [contents](#contents). **Need more detail?** Read the [full citations and study notes](literature/selected-papers.md).
+**New to the topic?** Follow [Start here](#start-here). **Looking for a paper?** Browse the [contents](#contents). **Need more detail?** Read the [full citations and study notes](literature/selected-papers.md), or the [extended notes on selected papers](literature/select-papers_senthil.md).
 
 ## Contents
 
@@ -27,7 +27,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
-- [Related surveys and background](#related-surveys-and-background) (2)
+- [Related surveys and background](#related-surveys-and-background) (3)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 - [Contributing](#contributing)
 - [License](#license)
@@ -44,7 +44,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **69 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **70 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 Only studies with a journal, conference, or workshop publication record are included. Preprint-only entries are excluded; conference papers hosted in official pre-proceedings are retained with that status stated in the study notes.
 
@@ -180,6 +180,7 @@ User experiences, downstream effects of affirmation, and responses to AI apologi
 
 Adjacent literature on model correction that informs the survey but is not direct experimental evidence of sycophancy.
 
+- [Tactical Variations in Ingratiation](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Self-presentation_Impression_Formation/Jones_Ingratiation_1964_Ch2_pp25-45.pdf) *(1964)* — Social-psychology account of ingratiation (flattery, opinion conformity, self-presentation, favors), the human behavior closest to model sycophancy; conceptual background, not evidence about models.
 - [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/) *(2024)* — Reviews when self-correction works, emphasizing reliable feedback and fair comparisons.
 
 - [AI apology: a critical review of apology in AI systems](https://doi.org/10.1007/s10462-025-11305-8) *(2025)* — Synthesizes AI-apology research, including twelve apology components and a context-sensitive framework; foundational background rather than evidence of model-level sycophancy.

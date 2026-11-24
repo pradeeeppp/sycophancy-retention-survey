@@ -4,7 +4,7 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries for the published studies retained under the reading list's inclusion policy.
 
-This index classifies 69 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 70 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
@@ -15,7 +15,7 @@ This index classifies 69 selected studies by their primary research focus. Some 
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
 - [Multi-agent sycophancy](#multi-agent-sycophancy) (7)
 - [Human effects, apologies, and trust](#human-effects-apologies-and-trust) (10)
-- [Related surveys and background](#related-surveys-and-background) (2)
+- [Related surveys and background](#related-surveys-and-background) (3)
 - [Related visual grounding and hallucination](#related-visual-grounding-and-hallucination) (4)
 
 ## Behavioral definitions and social sycophancy
@@ -301,6 +301,10 @@ Compares agreement, withholding challenge and neutral responses in a 31-person s
 ## Related surveys and background
 
 Adjacent literature on model correction that informs the survey but is not direct experimental evidence of sycophancy.
+
+**Jones, E. E. (1964).** [Tactical Variations in Ingratiation](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Self-presentation_Impression_Formation/Jones_Ingratiation_1964_Ch2_pp25-45.pdf). In *Ingratiation: A Social Psychological Analysis* (Ch. 2, pp. 24–45). Appleton-Century-Crofts.
+
+Jones defines ingratiation as behavior aimed at making oneself more attractive to someone who controls one's rewards, and identifies three main tactic classes plus a possible fourth: other-enhancement (praise and flattery), opinion conformity, self-presentation, and rendering favors. The account gives a human-behavior vocabulary for model sycophancy, whose closest analogues are flattery and opinion conformity. **Scope:** conceptual social-psychology background; LLMs lack human motives, so the framework should not be read as evidence that models ingratiate strategically. Extended notes: [select-papers_senthil.md](select-papers_senthil.md#psychological-origins-of-sycophancy).
 
 **Kamoi, R., Zhang, Y., Zhang, N., Han, J., & Zhang, R. (2024).** [When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs](https://aclanthology.org/2024.tacl-1.78/). *Transactions of the Association for Computational Linguistics*, 12, 1417–1440.
 
