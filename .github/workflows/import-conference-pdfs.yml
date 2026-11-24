@@ -1,0 +1,48 @@
+name: Import published conference PDFs
+on:
+  push:
+    branches: [papers/import-2026-11-21]
+    paths: ['.github/workflows/import-conference-pdfs.yml']
+permissions:
+  contents: write
+jobs:
+  papers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve and check the final proceedings files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p papers
+          while read -r stem url; do
+            file="papers/$stem.pdf"
+            curl --proto '=https' --proto-redir '=https' --location --fail --silent --show-error --retry 3 --max-time 90 "$url" --output "$file"
+            test "$(head -c 5 "$file")" = '%PDF-'
+            test "$(wc -c < "$file")" -gt 20000
+            if command -v pdfinfo >/dev/null; then pdfinfo "$file" >/dev/null; fi
+          done <<'PAPERS'
+          2022.acl-long.447 https://aclanthology.org/2022.acl-long.447.pdf
+          2024.acl-long.577 https://aclanthology.org/2024.acl-long.577.pdf
+          2024.naacl-long.348 https://aclanthology.org/2024.naacl-long.348.pdf
+          2025.acl-long.195 https://aclanthology.org/2025.acl-long.195.pdf
+          2025.emnlp-main.625 https://aclanthology.org/2025.emnlp-main.625.pdf
+          2025.emnlp-main.654 https://aclanthology.org/2025.emnlp-main.654.pdf
+          2025.emnlp-main.661 https://aclanthology.org/2025.emnlp-main.661.pdf
+          2025.emnlp-main.916 https://aclanthology.org/2025.emnlp-main.916.pdf
+          2026.acl-long.651 https://aclanthology.org/2026.acl-long.651.pdf
+          2026.acl-long.746 https://aclanthology.org/2026.acl-long.746.pdf
+          2026.acl-long.1421 https://aclanthology.org/2026.acl-long.1421.pdf
+          2026.acl-long.2046 https://aclanthology.org/2026.acl-long.2046.pdf
+          2026.emnlp-main.1500 https://aclanthology.org/2026.emnlp-main.1500.pdf
+          2026.emnlp-main.1732 https://aclanthology.org/2026.emnlp-main.1732.pdf
+          2026.emnlp-main.1780 https://aclanthology.org/2026.emnlp-main.1780.pdf
+          2026.emnlp-main.1907 https://aclanthology.org/2026.emnlp-main.1907.pdf
+          weng2025benchform https://proceedings.iclr.cc/paper_files/paper/2025/file/1da9ca7e9cef4b1af63913f05d1630a4-Paper-Conference.pdf
+          PAPERS
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- papers/*.pdf
+          git commit -m 'Archive 17 final proceedings PDFs for the survey'
+          git push origin HEAD:refs/heads/papers/import-2026-11-21
