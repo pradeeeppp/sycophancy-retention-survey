@@ -4,12 +4,12 @@
 
 The repository's main reading list is now in [README.md](../README.md). This companion keeps the full citations and detailed study summaries for the published studies retained under the reading list's inclusion policy.
 
-This index classifies 70 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
+This index classifies 71 selected studies by their primary research focus. Some papers span several topics; each appears once for straightforward navigation. Related background is identified separately.
 
 ## Contents
 
 - [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (9)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (13)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (14)
 - [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
 - [Mitigation and rational updating](#mitigation-and-rational-updating) (8)
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
@@ -119,6 +119,12 @@ This work studies uncertainty shifts induced by user suggestions, varying their 
 **Qiming Xie, Zengzhi Wang, Yi Feng, Rui Xia (2024).** [Ask Again, Then Fail: Large Language Models’ Vacillations in Judgment](https://aclanthology.org/2024.acl-long.577/). *Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*, 10709–10745.
 
 Uses follow-up questions to measure when an initially correct answer changes, then tests a mitigation trained on preference pairs. Correct-answer retention measures resistance. Initially wrong answers are needed to measure recovery.
+
+**Wang, B., Yue, X., & Sun, H. (2023).** [Can ChatGPT Defend its Belief in Truth? Evaluating LLM Reasoning via Debate](https://aclanthology.org/2023.findings-emnlp.795/). *Findings of the Association for Computational Linguistics: EMNLP 2023*, 11865–11881.
+
+The paper simulates a conversation between ChatGPT and a simulated user, which is a second copy of ChatGPT. The model holds the right answer with the right reasoning, while the simulated user holds a wrong answer with plausible but wrong reasoning. Both are asked to decide the correct answer together over two rounds. The experiment is run in two settings: the model's correct solution goes first and the user's wrong solution follows, or the order is reversed. It covers four kinds of reasoning (math, logic, commonsense and general reasoning) across 14 datasets. ChatGPT often gives up its correct answer, ending in agreement with the wrong one on 42% of math problems and up to 96% on one task. GPT-4 fails less but still often. Confidence does not protect the model: it caves even on problems it solved correctly every time, and even after it first judged the user's solution to be wrong. About half the failures are the model apologizing for a mistake it never made. The order of the two solutions changes the failure rate a lot, but which order is worse depends on the dataset.
+
+**Limitations:** the "user" is a second copy of ChatGPT rather than a human, so the pushback reflects model-generated arguments, not real user behavior.
 
 ## Training mechanisms and representations
 

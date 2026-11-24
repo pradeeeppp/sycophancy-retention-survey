@@ -6,9 +6,9 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 
 [Priority papers and PDFs](papers/README.md) · [Search strategy and screening flow](research/survey-search.md) · [Screening decisions](research/screening.csv)
 
-**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 70-study collection remain as separate archival inventories.
+**Current systematic-review research materials (review draft):** [34-paper annotated, publisher-linked evidence map](literature/prisma-core-papers.md) · [PRISMA 2020 compliance audit and flow status](research/PRISMA-2020-audit.md) · [PRISMA-S search provenance](research/PRISMA-search-provenance.md) · [Introduction citation audit](research/introduction-citation-audit.md) · [Publisher verification ledger](research/publisher-verification-ledger.md) · [NeurIPS full-text evidence](research/NeurIPS-full-text-evidence.md) · [Cross-paper evidence synthesis](research/evidence-synthesis.md). **These are candidate readings, not a completed PRISMA-included sample.** Historic 31-candidate CSV and 71-study collection remain as separate archival inventories.
 
-[![Studies: 70](https://img.shields.io/badge/Studies-70-334155)](#contents)
+[![Studies: 71](https://img.shields.io/badge/Studies-71-334155)](#contents)
 [![Topics: 9](https://img.shields.io/badge/Topics-9-334155)](#contents)
 [![Study notes](https://img.shields.io/badge/Read-Study_notes-2563eb)](literature/selected-papers.md)
 
@@ -21,7 +21,7 @@ When a user or another agent challenges a model, what distinguishes an evidence-
 - [Start here](#start-here)
 - [Scope and reading guide](#scope-and-reading-guide)
 - [Behavioral definitions and social sycophancy](#behavioral-definitions-and-social-sycophancy) (9)
-- [Evaluation and benchmarks](#evaluation-and-benchmarks) (13)
+- [Evaluation and benchmarks](#evaluation-and-benchmarks) (14)
 - [Training mechanisms and representations](#training-mechanisms-and-representations) (9)
 - [Mitigation and rational updating](#mitigation-and-rational-updating) (8)
 - [Multimodal sycophancy](#multimodal-sycophancy) (7)
@@ -44,7 +44,7 @@ A short path through the collection:
 
 ## Scope and reading guide
 
-The collection contains **70 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
+The collection contains **71 studies across nine topics**. These reading-list updates do not establish revised manuscript inclusion or PRISMA counts; those require an explicit screening protocol. Each study has one primary category; links in the reading guide are shortcuts to those same papers.
 
 Only studies with a journal, conference, or workshop publication record are included. Preprint-only entries are excluded; conference papers hosted in official pre-proceedings are retained with that status stated in the study notes.
 
@@ -96,6 +96,7 @@ Benchmarks and measurement protocols for answer reversals, sustained pressure, s
 
 [Study notes](literature/selected-papers.md#evaluation-and-benchmarks) · [Back to contents](#contents)
 - [Ask Again, Then Fail: Large Language Models’ Vacillations in Judgment](https://aclanthology.org/2024.acl-long.577/) *(2024)* — Uses follow-up questions to measure when an initially correct answer changes, then tests a mitigation trained on preference pairs.
+- [Can ChatGPT Defend its Belief in Truth? Evaluating LLM Reasoning via Debate](https://aclanthology.org/2023.findings-emnlp.795/) *(2023)* — Has ChatGPT debate a simulated user who defends a wrong answer; the model often abandons correct solutions, and about half the failures are apologies for mistakes it never made.
 
 ## Training mechanisms and representations
 
